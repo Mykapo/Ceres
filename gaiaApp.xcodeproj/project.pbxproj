@@ -66,8 +66,8 @@
 		45C02F0D21F9042300EA8B56 /* gaiaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gaiaAppUITests.swift; sourceTree = "<group>"; };
 		45C02F0F21F9042300EA8B56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C02F2021F904C600EA8B56 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		45C02F2221F904D300EA8B56 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Semibold.otf"; path = "../../redthread/redthread/SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
-		45C02F2321F904D300EA8B56 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Display-Bold.otf"; path = "../../redthread/redthread/SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		45C02F2221F904D300EA8B56 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		45C02F2321F904D300EA8B56 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		45C02F2621F905C900EA8B56 /* ObIntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroPageViewController.swift; sourceTree = "<group>"; };
 		45C02F2821F9076200EA8B56 /* ObIntroContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroContentViewController.swift; sourceTree = "<group>"; };
 		45C02F2A21F9078800EA8B56 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
