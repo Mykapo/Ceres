@@ -17,12 +17,7 @@ class ViewController: UIViewController {
     
     // MARK: - Instantiate onboarding screens
     
-    override func viewDidAppear(_ animated: Bool) {
-        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
-        if let obVC = sb.instantiateViewController(withIdentifier: "ObIntroViewController") as? ObIntroViewController {
-            present(obVC, animated: true, completion: nil)
-        }
-    }
+
 
 
 }
