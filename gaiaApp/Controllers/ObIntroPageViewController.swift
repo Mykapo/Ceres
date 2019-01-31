@@ -14,7 +14,8 @@ class ObIntroPageViewController: UIPageViewController, UIPageViewControllerDataS
     
     var pageHeadings = ["Un petit pas pour l'homme, un grand pas pour la planète", "Nous vous guidons tout au long de votre parcours"]
     var pageDescs = ["Gaïa est l’application qui vous aide au quotidien à adopter des habitudes plus responsables et respectueuses de l’environnement.", "De la réduction de vos déchets à l’adoption de nouveaux réflexes de consommation, Gaïa vous accompagne, pas à pas et à votre rythme."]
-     var pageImgSrcs = ["onboarding1", "onboarding2"]
+    var pageImgSrcs = ["onboarding1", "onboarding2"]
+    var pageImgBgColors = ["pickleColor-lightGreen", "pickleColor-lavender"]
     
     var currentIndex = 0
     
@@ -60,6 +61,7 @@ class ObIntroPageViewController: UIPageViewController, UIPageViewControllerDataS
             pageContentViewController.heading = pageHeadings[index]
             pageContentViewController.desc = pageDescs[index]
             pageContentViewController.imgSrc = pageImgSrcs[index]
+            pageContentViewController.imgBgColor = pageImgBgColors[index]
             pageContentViewController.index = index
             
             return pageContentViewController

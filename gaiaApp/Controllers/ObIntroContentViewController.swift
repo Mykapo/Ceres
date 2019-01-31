@@ -25,13 +25,15 @@ class ObIntroContentViewController: UIViewController {
     }
     
     @IBOutlet var contentImageView: UIImageView!
+    @IBOutlet var imageViewContainer: UIView!
     
     // MARK: - Properties
     
     var index = 0;
-    var heading = "";
-    var desc = "";
-    var imgSrc = "";
+    var heading = ""
+    var desc = ""
+    var imgSrc = ""
+    var imgBgColor = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,7 @@ class ObIntroContentViewController: UIViewController {
         headingLabel.text = heading
         descLabel.text = desc
         contentImageView.image = UIImage(named: imgSrc)
+        imageViewContainer.backgroundColor = UIColor(named: imgBgColor)
     }
     
 
