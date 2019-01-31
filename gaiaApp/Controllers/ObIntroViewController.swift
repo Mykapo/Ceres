@@ -11,7 +11,7 @@ import UIKit
 class ObIntroViewController: UIViewController {
     
     @IBOutlet var pageControl: UIPageControl!
-    @IBOutlet var nextButton: UIButton!
+    @IBOutlet var nextButton: PickleButton!
     @IBOutlet var skipButton: UIButton!
 
     override func viewDidLoad() {
