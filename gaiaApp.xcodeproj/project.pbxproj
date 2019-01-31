@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
+		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
+		458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */; };
+		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
 		45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02EED21F9042000EA8B56 /* AppDelegate.swift */; };
 		45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02EEF21F9042000EA8B56 /* ViewController.swift */; };
 		45C02EF321F9042000EA8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C02EF121F9042000EA8B56 /* Main.storyboard */; };
@@ -21,7 +24,6 @@
 		45C02F2521F904D300EA8B56 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45C02F2321F904D300EA8B56 /* SF-Pro-Display-Bold.otf */; };
 		45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F2621F905C900EA8B56 /* ObIntroPageViewController.swift */; };
 		45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F2821F9076200EA8B56 /* ObIntroContentViewController.swift */; };
-		45C02F2B21F9078800EA8B56 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F2A21F9078800EA8B56 /* Colors.swift */; };
 		45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F2E21F90B1900EA8B56 /* Buttons.swift */; };
 		45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F3021F90C5A00EA8B56 /* ObAvatarViewController.swift */; };
 		45C02F3521F913D300EA8B56 /* SF-Pro-Text-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 45C02F3221F913D200EA8B56 /* SF-Pro-Text-Bold.otf */; };
@@ -52,6 +54,9 @@
 /* Begin PBXFileReference section */
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
+		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
+		458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormErrorMessage.swift; sourceTree = "<group>"; };
+		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
 		45C02EEA21F9042000EA8B56 /* gaiaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaiaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C02EED21F9042000EA8B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C02EEF21F9042000EA8B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +75,6 @@
 		45C02F2321F904D300EA8B56 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		45C02F2621F905C900EA8B56 /* ObIntroPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroPageViewController.swift; sourceTree = "<group>"; };
 		45C02F2821F9076200EA8B56 /* ObIntroContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroContentViewController.swift; sourceTree = "<group>"; };
-		45C02F2A21F9078800EA8B56 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		45C02F2E21F90B1900EA8B56 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
 		45C02F3021F90C5A00EA8B56 /* ObAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarViewController.swift; sourceTree = "<group>"; };
 		45C02F3221F913D200EA8B56 /* SF-Pro-Text-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Bold.otf"; sourceTree = "<group>"; };
@@ -106,6 +110,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		458EAC192203052E009FDF75 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				458EAC1B2203064C009FDF75 /* Forms */,
+				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		458EAC1B2203064C009FDF75 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				458EAC152201C201009FDF75 /* UsernameTextField.swift */,
+				458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */,
+			);
+			path = Forms;
+			sourceTree = "<group>";
+		};
 		45C02EE121F9042000EA8B56 = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +151,7 @@
 		45C02EEC21F9042000EA8B56 /* gaiaApp */ = {
 			isa = PBXGroup;
 			children = (
-				45C02F1D21F9045E00EA8B56 /* Extensions */,
+				458EAC192203052E009FDF75 /* UIComponents */,
 				45C02F1C21F9045900EA8B56 /* Controllers */,
 				45C02F1B21F9044F00EA8B56 /* Storyboards */,
 				45C02EED21F9042000EA8B56 /* AppDelegate.swift */,
@@ -184,17 +206,9 @@
 				45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */,
 				458EAC0F22007D90009FDF75 /* ObNameViewController.swift */,
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
+				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		45C02F1D21F9045E00EA8B56 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				45C02F2A21F9078800EA8B56 /* Colors.swift */,
-				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -339,10 +353,12 @@
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
+				458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */,
 				45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */,
-				45C02F2B21F9078800EA8B56 /* Colors.swift in Sources */,
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
+				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
+				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,
