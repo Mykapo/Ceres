@@ -10,13 +10,13 @@ import UIKit
 
 class ObAvatarViewController: UIViewController {
     
-    @IBOutlet var chooseButton: UIButton!
+    @IBOutlet var chooseButton: PickleButton!
     @IBOutlet var pageControl: UIPageControl!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        chooseButton?.setValidationButton();
+        chooseButton.setEnabledButtonStyle()
     }
     
     var ObAvatarPageViewController: ObAvatarPageViewController?
