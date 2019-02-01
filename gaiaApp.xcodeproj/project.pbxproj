@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		455189C9220492DF00DF0F79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455189C8220492DF00DF0F79 /* Colors.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		455189C8220492DF00DF0F79 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				458EAC1B2203064C009FDF75 /* Forms */,
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
+				455189C8220492DF00DF0F79 /* Colors.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */,
+				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,

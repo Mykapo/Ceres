@@ -16,11 +16,11 @@ class PickleButton: UIButton {
     
     func setEnabledButtonStyle() {
         self.setTitleColor(UIColor.white, for: .normal)
-        self.layer.backgroundColor = UIColor(named: "pickleColor-darkBlue")?.cgColor
+        self.layer.backgroundColor = UIColor.pickleDarkBlue.cgColor
     }
     
     func setDisabledButtonStyle() {
-        self.setTitleColor(UIColor(named: "pickleColor-grey"), for: .disabled)
-        self.layer.backgroundColor = UIColor(named: "pickleColor-paleGrey")?.cgColor
+        self.setTitleColor(UIColor.pickleGrey, for: .disabled)
+        self.layer.backgroundColor = UIColor.picklePaleGrey.cgColor
     }
 }
