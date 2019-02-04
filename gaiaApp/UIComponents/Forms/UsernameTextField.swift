@@ -12,8 +12,8 @@ import UIKit
 class PickleUsernameTextField: UITextField {
     
     let bottomBorder = UIView()
-    let darkBlueColor = UIColor(named: "pickleColor-darkBlue")!
-    let padding = UIEdgeInsets(top: 0, left: 5, bottom: 10, right: 0)
+    let darkBlueColor = UIColor.pickleDarkBlue
+    let padding = UIEdgeInsets(top: 14, left: 8, bottom: 14, right: 8)
     
     override func awakeFromNib() {
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -54,9 +54,9 @@ class PickleUsernameTextField: UITextField {
     @IBInspectable var hasError: Bool = false {
         didSet {
             if (hasError) {
-                bottomBorder.backgroundColor = UIColor.red
+                bottomBorder.backgroundColor = UIColor.pickleRed
             } else {
-                bottomBorder.backgroundColor = darkBlueColor
+                bottomBorder.backgroundColor = UIColor.pickleDarkBlue
             }
         }
     }

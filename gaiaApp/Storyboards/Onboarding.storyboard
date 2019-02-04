@@ -20,9 +20,6 @@
         <array key="SF-Pro-Text-Bold.otf">
             <string>SFProText-Bold</string>
         </array>
-        <array key="SF-Pro-Text-Regular.otf">
-            <string>SFProText-Regular</string>
-        </array>
     </customFonts>
     <scenes>
         <!--Ob Intro Page View Controller-->
@@ -60,7 +57,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="LY8-wW-aRU">
-                                <rect key="frame" x="20" y="487" width="335" height="73.5"/>
+                                <rect key="frame" x="20" y="487" width="335" height="110.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Titre" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVG-kd-zCL">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="29"/>
@@ -68,10 +65,56 @@
                                         <color key="textColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Description" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-EP-bXm">
-                                        <rect key="frame" x="0.0" y="53" width="335" height="20.5"/>
-                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
-                                        <color key="textColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWL-EP-bXm">
+                                        <rect key="frame" x="0.0" y="53" width="335" height="57.5"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Description    Description    Description    Description    Description    ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.12941" green="0.10979999999999999" blue="0.29804000000000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="SFProText-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.4083333333333332" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                        <tabStops>
+                                                            <textTab alignment="left" location="28">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="56">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="84">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="112">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="140">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="168">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="196">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="224">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="252">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="280">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="308">
+                                                                <options/>
+                                                            </textTab>
+                                                            <textTab alignment="left" location="336">
+                                                                <options/>
+                                                            </textTab>
+                                                        </tabStops>
+                                                    </paragraphStyle>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -208,11 +251,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pE-JB-aIO" customClass="PickleFormErrorMessage" customModule="gaiaApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="320.5" width="335" height="17"/>
+                                <rect key="frame" x="28" y="303.5" width="319" height="20.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Message d'erreur">
                                         <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="14" name="SFProText-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.2" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -227,13 +272,13 @@
                             <constraint firstItem="zFE-Sz-FVW" firstAttribute="top" secondItem="tKS-Bw-yIL" secondAttribute="bottom" constant="110" id="J8s-SA-Qh8"/>
                             <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="zFE-Sz-FVW" secondAttribute="trailing" constant="20" id="X5Q-SZ-Bpz"/>
                             <constraint firstItem="LBZ-gS-Wz2" firstAttribute="leading" secondItem="RXt-9V-mKr" secondAttribute="leading" constant="20" id="Zcm-Hn-RE8"/>
-                            <constraint firstItem="2pE-JB-aIO" firstAttribute="top" secondItem="zFE-Sz-FVW" secondAttribute="bottom" constant="25" id="auW-37-Q1i"/>
+                            <constraint firstItem="2pE-JB-aIO" firstAttribute="top" secondItem="zFE-Sz-FVW" secondAttribute="bottom" constant="8" id="auW-37-Q1i"/>
                             <constraint firstItem="tKS-Bw-yIL" firstAttribute="leading" secondItem="RXt-9V-mKr" secondAttribute="leading" constant="20" id="fId-AG-60f"/>
                             <constraint firstItem="zFE-Sz-FVW" firstAttribute="leading" secondItem="RXt-9V-mKr" secondAttribute="leading" constant="20" id="fkt-Dw-W9O"/>
                             <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="tKS-Bw-yIL" secondAttribute="trailing" constant="20" id="p30-I4-GBn"/>
-                            <constraint firstItem="2pE-JB-aIO" firstAttribute="leading" secondItem="RXt-9V-mKr" secondAttribute="leading" constant="20" id="qk9-dA-qzy"/>
+                            <constraint firstItem="2pE-JB-aIO" firstAttribute="leading" secondItem="RXt-9V-mKr" secondAttribute="leading" constant="28" id="qk9-dA-qzy"/>
                             <constraint firstItem="tKS-Bw-yIL" firstAttribute="top" secondItem="RXt-9V-mKr" secondAttribute="top" constant="88" id="twZ-51-1cG"/>
-                            <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="2pE-JB-aIO" secondAttribute="trailing" constant="20" id="v9J-gJ-nKt"/>
+                            <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="2pE-JB-aIO" secondAttribute="trailing" constant="28" id="v9J-gJ-nKt"/>
                             <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="nSy-8X-ROy" secondAttribute="trailing" constant="20" id="vyb-4u-KLq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RXt-9V-mKr"/>
