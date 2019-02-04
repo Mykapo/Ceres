@@ -195,7 +195,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBZ-gS-Wz2" customClass="PickleButton" customModule="gaiaApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="737" width="335" height="55"/>
+                                <rect key="frame" x="20" y="703" width="335" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="ZXH-XQ-Xuf"/>
                                 </constraints>
@@ -221,7 +221,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="RXt-9V-mKr" firstAttribute="bottom" secondItem="LBZ-gS-Wz2" secondAttribute="bottom" constant="20" id="7ve-Bg-mpY"/>
+                            <constraint firstItem="RXt-9V-mKr" firstAttribute="bottom" secondItem="LBZ-gS-Wz2" secondAttribute="bottom" constant="54" id="7ve-Bg-mpY"/>
                             <constraint firstItem="nSy-8X-ROy" firstAttribute="top" secondItem="RXt-9V-mKr" secondAttribute="top" constant="30" id="AiM-7m-IYJ"/>
                             <constraint firstItem="RXt-9V-mKr" firstAttribute="trailing" secondItem="LBZ-gS-Wz2" secondAttribute="trailing" constant="20" id="CcE-k5-hVV"/>
                             <constraint firstItem="zFE-Sz-FVW" firstAttribute="top" secondItem="tKS-Bw-yIL" secondAttribute="bottom" constant="110" id="J8s-SA-Qh8"/>
@@ -258,16 +258,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quelle est la jeune pousse qui vous correspond le plus ?" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccr-zo-FBc">
-                                <rect key="frame" x="20" y="108" width="335" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ccr-zo-FBc" secondAttribute="height" multiplier="335:63" id="ama-aI-34l"/>
-                                </constraints>
+                                <rect key="frame" x="20" y="108" width="335" height="57.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
                                 <color key="textColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-zX-ntf">
+                                <rect key="frame" x="0.0" y="219.5" width="375" height="384"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="u1h-zX-ntf" secondAttribute="height" multiplier="125:128" id="HkH-KM-WSu"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="KP3-Nx-crc" kind="embed" id="Hkp-2P-UFF"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="nU1-2s-X8Y">
+                                <rect key="frame" x="168" y="644" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLa-bk-plZ" customClass="PickleButton" customModule="gaiaApp" customModuleProvider="target">
-                                <rect key="frame" x="20" y="659" width="336" height="55"/>
+                                <rect key="frame" x="20" y="703" width="336" height="55"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="iNu-3q-iMe"/>
@@ -280,46 +291,21 @@
                                     <action selector="goToNameChoiceWithSender:" destination="UTl-al-YoX" eventType="touchUpInside" id="6fo-Ae-Uwj"/>
                                 </connections>
                             </button>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQh-L7-65L">
-                                <rect key="frame" x="0.0" y="762" width="375" height="49"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Missions" id="BHy-2s-jIK"/>
-                                    <tabBarItem title="Statistiques" id="U4A-Rc-ffa"/>
-                                    <tabBarItem title="Compte" id="ViN-Nk-S6J"/>
-                                </items>
-                            </tabBar>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u1h-zX-ntf">
-                                <rect key="frame" x="0.0" y="213" width="375" height="340"/>
-                                <connections>
-                                    <segue destination="KP3-Nx-crc" kind="embed" id="Hkp-2P-UFF"/>
-                                </connections>
-                            </containerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="nU1-2s-X8Y">
-                                <rect key="frame" x="168" y="600" width="39" height="37"/>
-                                <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="currentPageIndicatorTintColor" red="0.12941176469999999" green="0.10980392160000001" blue="0.29803921570000003" alpha="1" colorSpace="calibratedRGB"/>
-                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BQh-L7-65L" firstAttribute="top" secondItem="uLa-bk-plZ" secondAttribute="bottom" constant="48" id="BGd-YP-UeD"/>
                             <constraint firstItem="Zf0-hn-nnX" firstAttribute="trailing" secondItem="ccr-zo-FBc" secondAttribute="trailing" constant="20" id="Ecg-rR-vX3"/>
                             <constraint firstItem="nU1-2s-X8Y" firstAttribute="leading" secondItem="Zf0-hn-nnX" secondAttribute="leading" constant="168" id="JX1-jR-yqz"/>
+                            <constraint firstItem="Zf0-hn-nnX" firstAttribute="bottom" secondItem="uLa-bk-plZ" secondAttribute="bottom" constant="54" id="Nwq-ve-GfO"/>
                             <constraint firstItem="u1h-zX-ntf" firstAttribute="trailing" secondItem="Zf0-hn-nnX" secondAttribute="trailing" id="OZH-XM-4rh"/>
                             <constraint firstItem="Zf0-hn-nnX" firstAttribute="trailing" secondItem="nU1-2s-X8Y" secondAttribute="trailing" constant="168" id="RKM-c3-G00"/>
-                            <constraint firstItem="u1h-zX-ntf" firstAttribute="trailing" secondItem="BQh-L7-65L" secondAttribute="trailing" id="RXk-aH-aPT"/>
                             <constraint firstItem="uLa-bk-plZ" firstAttribute="leading" secondItem="Zf0-hn-nnX" secondAttribute="leading" constant="20" id="S70-qI-1sH"/>
                             <constraint firstItem="u1h-zX-ntf" firstAttribute="leading" secondItem="Zf0-hn-nnX" secondAttribute="leading" id="TRp-S3-lGX"/>
-                            <constraint firstItem="u1h-zX-ntf" firstAttribute="leading" secondItem="BQh-L7-65L" secondAttribute="leading" id="V7D-ob-r1S"/>
                             <constraint firstItem="uLa-bk-plZ" firstAttribute="top" secondItem="nU1-2s-X8Y" secondAttribute="bottom" constant="22" id="XH4-vf-vUT"/>
                             <constraint firstItem="Zf0-hn-nnX" firstAttribute="trailing" secondItem="uLa-bk-plZ" secondAttribute="trailing" constant="19" id="bTW-kW-BMu"/>
                             <constraint firstItem="ccr-zo-FBc" firstAttribute="leading" secondItem="Zf0-hn-nnX" secondAttribute="leading" constant="20" id="dQs-dW-PLS"/>
+                            <constraint firstItem="u1h-zX-ntf" firstAttribute="top" secondItem="ccr-zo-FBc" secondAttribute="bottom" constant="54" id="gA2-t0-Rm3"/>
                             <constraint firstItem="ccr-zo-FBc" firstAttribute="top" secondItem="Zf0-hn-nnX" secondAttribute="top" constant="88" id="kpE-sc-JlM"/>
-                            <constraint firstItem="u1h-zX-ntf" firstAttribute="top" secondItem="Chb-Df-hzY" secondAttribute="top" constant="213" id="l5y-Lx-GGE"/>
-                            <constraint firstAttribute="bottom" secondItem="uLa-bk-plZ" secondAttribute="bottom" constant="98" id="o7q-1c-d2y"/>
-                            <constraint firstItem="nU1-2s-X8Y" firstAttribute="top" secondItem="u1h-zX-ntf" secondAttribute="bottom" constant="47" id="oBO-oI-hQV"/>
-                            <constraint firstItem="uLa-bk-plZ" firstAttribute="top" secondItem="u1h-zX-ntf" secondAttribute="bottom" constant="106" id="qEg-lU-k5W"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Zf0-hn-nnX"/>
                     </view>
