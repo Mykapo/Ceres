@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453CF9EB22404A06004F4676 /* MissionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF9EA22404A06004F4676 /* MissionCellCollectionViewCell.swift */; };
 		455189C9220492DF00DF0F79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455189C8220492DF00DF0F79 /* Colors.swift */; };
+		45765824223BB2BC00FB7162 /* MissionRowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* MissionRowCollectionViewCell.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
@@ -53,7 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		453CF9EA22404A06004F4676 /* MissionCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		455189C8220492DF00DF0F79 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		45765823223BB2BC00FB7162 /* MissionRowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionRowCollectionViewCell.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				458EAC1B2203064C009FDF75 /* Forms */,
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
 				455189C8220492DF00DF0F79 /* Colors.swift */,
+				45765823223BB2BC00FB7162 /* MissionRowCollectionViewCell.swift */,
+				453CF9EA22404A06004F4676 /* MissionCellCollectionViewCell.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -357,11 +363,13 @@
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
+				45765824223BB2BC00FB7162 /* MissionRowCollectionViewCell.swift in Sources */,
 				458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */,
 				45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */,
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
+				453CF9EB22404A06004F4676 /* MissionCellCollectionViewCell.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,

@@ -8,29 +8,38 @@
 
 import UIKit
 
-class MissionsListViewController: UIViewController {
+class MissionsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+    
+    private let rowId = "rowId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        collectionView?.register(MissionRowCollectionViewCell.self, forCellWithReuseIdentifier: rowId)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
-        if let obVC = sb.instantiateViewController(withIdentifier: "ObIntroViewController") as? ObIntroViewController {
-            present(obVC, animated: true, completion: nil)
-        }
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let row =  collectionView.dequeueReusableCell(withReuseIdentifier: rowId, for: indexPath) as! MissionRowCollectionViewCell
+        
+        return row
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 140)
+    }
+    
+    // ---------- SHOW ONBOARDING ------------ //
+//    override func viewDidAppear(_ animated: Bool) {
+//        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
+//        if let obVC = sb.instantiateViewController(withIdentifier: "ObIntroViewController") as? ObIntroViewController {
+//            present(obVC, animated: true, completion: nil)
+//        }
+//    }
+
 
 }
