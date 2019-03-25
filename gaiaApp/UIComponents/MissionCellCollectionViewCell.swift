@@ -24,7 +24,7 @@ class MissionCellCollectionViewCell: UICollectionViewCell {
     let shortMissionImg: UIImageView = {
         let iv = UIImageView()
         iv.image = UIImage(named: "gourde")
-        iv.contentMode = .scaleAspectFit .center
+        iv.contentMode = .scaleAspectFit
         return iv
     }()
     
