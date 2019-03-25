@@ -23,6 +23,17 @@ class MissionRowCollectionViewCell: UICollectionViewCell, UICollectionViewDataSo
         fatalError("init(coder:) has not been implemented")
     }
     
+    let missionCategory: UILabel = {
+        let label = UILabel()
+        label.text = "Missions courtes"
+        label.text = label.text?.uppercased()
+        label.font = UIFont(name: "SF-Pro-Display-Bold", size: 13)
+        label.textColor = UIColor.pickleGrey
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        return label
+    }()
+    
     func missionsCollectionView() -> UICollectionView {
         let layout = UICollectionViewFlowLayout()
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
@@ -41,15 +52,18 @@ class MissionRowCollectionViewCell: UICollectionViewCell, UICollectionViewDataSo
         let missionsCollectionView = self.missionsCollectionView()
         
         addSubview(missionsCollectionView)
+        addSubview(missionCategory)
         
         missionsCollectionView.dataSource = self
         missionsCollectionView.delegate = self
         
         missionsCollectionView.register(MissionCellCollectionViewCell.self, forCellWithReuseIdentifier: cellId)
         
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionCategory]))
+        
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView]))
 
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[category(30)][v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView, "category": missionCategory]))
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -62,8 +76,14 @@ class MissionRowCollectionViewCell: UICollectionViewCell, UICollectionViewDataSo
         return cell
     }
     
+    // Set collection view items width and height
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 200, height: frame.height)
+    }
+    
+    // Add margins to collectionViews
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
     
 }

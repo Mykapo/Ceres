@@ -59,30 +59,13 @@ class ObNameViewController: UIViewController {
             nextButton.setDisabledButtonStyle()
         }
     }
-    
+
     func validateInputValue(value: String){
-        let letters = CharacterSet.letters
-        let numbers = CharacterSet.decimalDigits
-        
         if value.isEmpty {
             nameTextField.hasError = !nameTextField.hasError
             errorMessage.text = "Votre pseudo est vide. Veuillez entrer un pseudo ayant au moins un caractère."
             
             return
-        } else {
-            for char in value.unicodeScalars {
-                if letters.contains(char) {
-                    nameTextField.hasError = !nameTextField.hasError
-                    errorMessage.text = "Votre nom d'utilisateur est vide. Veuillez entrer un nom d'utilisateur ayant au moins un caractère."
-                    
-                    return
-                } else if numbers.contains(char) {
-                    nameTextField.hasError = !nameTextField.hasError
-                    errorMessage.text = "Votre pseudo ne doit pas contenir de caractères spéciaux."
-                    
-                    return
-                }
-            }
         }
     }
     

@@ -30,7 +30,7 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 140)
+        return CGSize(width: view.frame.width, height: 163)
     }
     
     // ---------- SHOW ONBOARDING ------------ //

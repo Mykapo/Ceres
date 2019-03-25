@@ -21,8 +21,20 @@ class MissionCellCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    let shortMissionImg: UIImageView = {
+        let iv = UIImageView()
+        iv.image = UIImage(named: "gourde")
+        iv.contentMode = .scaleAspectFit .center
+        return iv
+    }()
+    
     func setupViews(){
-        backgroundColor = UIColor.yellow
+        backgroundColor = UIColor.pickleLavender
+        
+        addSubview(shortMissionImg)
+        shortMissionImg.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+        shortMissionImg.layer.cornerRadius = 12
+        shortMissionImg.layer.masksToBounds = true
     }
     
 }
