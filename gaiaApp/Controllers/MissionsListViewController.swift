@@ -10,26 +10,42 @@ import UIKit
 
 class MissionsListViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
-    private let rowId = "rowId"
+    private let cellId = "cellId"
+    private let largeCellId = "largeCellId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView?.register(MissionRowCollectionViewCell.self, forCellWithReuseIdentifier: rowId)
+        collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
     }
     
+    // Number of rows in the list
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    // Return a CategoryCell element: create the list's rows
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let row =  collectionView.dequeueReusableCell(withReuseIdentifier: rowId, for: indexPath) as! MissionRowCollectionViewCell
+        if indexPath.item == 0 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: largeCellId, for: indexPath) as! LargeCategoryCell
+            
+            return cell
+        }
+        
+        let row =  collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
         
         return row
     }
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
+    // Set CategoryCell elements' width and height
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if indexPath.item == 0 {
+            return CGSize(width: view.frame.width, height: 337)
+        }
+        
         return CGSize(width: view.frame.width, height: 163)
     }
     

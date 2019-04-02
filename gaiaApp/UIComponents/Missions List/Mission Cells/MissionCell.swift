@@ -1,5 +1,5 @@
 //
-//  MissionCellCollectionViewCell.swift
+//  MissionCell.swift
 //  gaiaApp
 //
 //  Created by Molika THAI on 18/03/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MissionCellCollectionViewCell: UICollectionViewCell {
+class MissionCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         
@@ -21,20 +21,22 @@ class MissionCellCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // Short mission image
     let shortMissionImg: UIImageView = {
-        let iv = UIImageView()
-        iv.image = UIImage(named: "gourde")
-        iv.contentMode = .scaleAspectFit
-        return iv
+        let ivShort = UIImageView()
+        ivShort.image = UIImage(named: "gourde")
+        ivShort.contentMode = .scaleAspectFit
+        //        ivShort.layer.cornerRadius = 16
+        //        ivShort.layer.masksToBounds = true
+        return ivShort
     }()
+
     
     func setupViews(){
         backgroundColor = UIColor.pickleLavender
         
         addSubview(shortMissionImg)
         shortMissionImg.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
-        shortMissionImg.layer.cornerRadius = 12
-        shortMissionImg.layer.masksToBounds = true
     }
     
 }
