@@ -20,7 +20,7 @@ class PickleUser {
             }
         }
         
-        var uri = ""
+        var uri = "/"
         if let u = user,
            let id = u.id {
             uri = "/\(id)"
@@ -34,8 +34,6 @@ class PickleUser {
         let request = URLRequest(url: url)
         Network.getContent(urlRequest: request, decodable: User.self) {
             user, error in
-            
-            print("ANYTHINNGGGG PLZZZZZZ")
             
             guard nil == error else {
                 completion(nil, error)

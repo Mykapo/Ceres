@@ -10,7 +10,7 @@ import Foundation
 typealias NetworkError = Network.NetworkErrorEnum
 
 class Network {
-    static let apiUrl = "http://10.93.182.93:8080/"
+    static let apiUrl = "http://10.93.182.93:8080"
     
     enum NetworkErrorEnum: Error {
         case noData(_ error: String)
@@ -43,11 +43,7 @@ class Network {
             }
             
             let decoder = Utils.getDecoder()
-            do {
-                let _ = try decoder.decode(decodable, from: data)
-            } catch {
-                print(error)
-            }
+            
             if let d = try? decoder.decode(decodable, from: data) {
                 completion(d, nil)
             } else {

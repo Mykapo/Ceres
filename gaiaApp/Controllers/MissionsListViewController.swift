@@ -27,6 +27,19 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
                 print(error!.localizedDescription)
                 return
             }
+            
+            if let user = user {
+                PickleMission.getNextMissions(for: user) {
+                    user, error in
+                    
+                    guard error == nil else {
+                        print(error!.localizedDescription)
+                        return
+                    }
+                    
+                    print(user!)
+                }
+            }
         }
         
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
