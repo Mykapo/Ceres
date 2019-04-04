@@ -160,6 +160,7 @@
 			children = (
 				453CF9EA22404A06004F4676 /* MissionCell.swift */,
 				459A856C225392FA000BCD0F /* LockedCell.swift */,
+				45971ECB22560EB80060E2BD /* MissionListHeader.swift */,
 				459A856F22539964000BCD0F /* LargeMissionCell.swift */,
 			);
 			path = "Mission Cells";
@@ -179,7 +180,6 @@
 			children = (
 				45765823223BB2BC00FB7162 /* CategoryCell.swift */,
 				459A856722521399000BCD0F /* LargeCategoryCell.swift */,
-				45971ECB22560EB80060E2BD /* MissionListHeader.swift */,
 			);
 			path = "Category Cells";
 			sourceTree = "<group>";

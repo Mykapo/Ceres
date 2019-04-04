@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mKP-Ss-m9u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2Zs-f7-Ihi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,83 +10,13 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-Pro-Display-Bold.otf">
-            <string>SFProDisplay-Bold</string>
-        </array>
-    </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="pAP-VB-pnd">
-            <objects>
-                <viewController id="Rk6-si-F92" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZNm-9Z-lfn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF6-pc-o4K">
-                                <rect key="frame" x="24" y="73" width="327" height="41"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="34"/>
-                                <color key="textColor" name="pickleColor-darkBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-CI-gq5">
-                                <rect key="frame" x="24" y="146" width="327" height="335"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="electronics" translatesAutoresizingMaskIntoConstraints="NO" id="H68-at-aAU">
-                                        <rect key="frame" x="0.0" y="8" width="300" height="210"/>
-                                        <color key="backgroundColor" name="pickleColor-pink"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Énergie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-t8-jUZ">
-                                        <rect key="frame" x="0.0" y="226" width="58" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Éteindre ses appareils électriques" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyR-Fo-ZqL">
-                                        <rect key="frame" x="0.0" y="255" width="257" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="T9n-t8-jUZ" firstAttribute="top" secondItem="H68-at-aAU" secondAttribute="bottom" constant="8" id="3Wh-Lm-13U"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yyR-Fo-ZqL" secondAttribute="trailing" constant="20" symbolic="YES" id="4V8-Ii-NEj"/>
-                                    <constraint firstItem="T9n-t8-jUZ" firstAttribute="leading" secondItem="i2a-CI-gq5" secondAttribute="leading" id="6jS-lE-cVN"/>
-                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="top" secondItem="T9n-t8-jUZ" secondAttribute="bottom" constant="8" id="Mgx-XZ-2PT"/>
-                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="leading" secondItem="T9n-t8-jUZ" secondAttribute="leading" id="XqK-Ij-wOA"/>
-                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="leading" secondItem="H68-at-aAU" secondAttribute="leading" id="YCz-zf-hPv"/>
-                                    <constraint firstAttribute="bottom" secondItem="yyR-Fo-ZqL" secondAttribute="bottom" constant="59" id="Yhr-H6-qPN"/>
-                                    <constraint firstAttribute="trailing" secondItem="T9n-t8-jUZ" secondAttribute="trailing" constant="269" id="qzP-pK-xwR"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="QF6-pc-o4K" firstAttribute="leading" secondItem="Hwe-Z2-xdh" secondAttribute="leading" constant="24" id="AhD-9t-30V"/>
-                            <constraint firstItem="i2a-CI-gq5" firstAttribute="leading" secondItem="Hwe-Z2-xdh" secondAttribute="leading" constant="24" id="fBz-gZ-0bE"/>
-                            <constraint firstItem="QF6-pc-o4K" firstAttribute="top" secondItem="Hwe-Z2-xdh" secondAttribute="top" constant="53" id="fVp-mL-YHU"/>
-                            <constraint firstItem="i2a-CI-gq5" firstAttribute="top" secondItem="QF6-pc-o4K" secondAttribute="bottom" constant="32" id="ljs-kl-BFc"/>
-                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="trailing" secondItem="i2a-CI-gq5" secondAttribute="trailing" constant="24" id="pJz-KP-xa1"/>
-                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="bottom" secondItem="i2a-CI-gq5" secondAttribute="bottom" constant="331" id="pOH-sg-SLa"/>
-                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="trailing" secondItem="QF6-pc-o4K" secondAttribute="trailing" constant="24" id="r4l-tm-Qhv"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Hwe-Z2-xdh"/>
-                    </view>
-                    <size key="freeformSize" width="375" height="812"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VaA-Ei-eHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-634.39999999999998" y="30.584707646176913"/>
-        </scene>
-        <!--Missions List View Controller-->
+        <!--Missions-->
         <scene sceneID="ifc-Wd-JKB">
             <objects>
                 <collectionViewController id="mKP-Ss-m9u" customClass="MissionsListViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KjB-M3-RMS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ww9-X6-jsS">
@@ -110,11 +40,12 @@
                             <outlet property="delegate" destination="mKP-Ss-m9u" id="HBe-3h-ZjS"/>
                         </connections>
                     </collectionView>
+                    <tabBarItem key="tabBarItem" title="Missions" image="ic-missions" id="bsm-x2-VJx"/>
                     <size key="freeformSize" width="375" height="812"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HTJ-WX-TWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1105" y="-318"/>
+            <point key="canvasLocation" x="-1116" y="-1090"/>
         </scene>
         <!--Missions Details View Controller-->
         <scene sceneID="0xe-sp-Qae">
@@ -138,14 +69,106 @@
             </objects>
             <point key="canvasLocation" x="950" y="31"/>
         </scene>
+        <!--Compte-->
+        <scene sceneID="0uB-ay-L3I">
+            <objects>
+                <navigationController id="P0H-NK-qdv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Compte" image="ic-profile" id="Rnp-D1-JBQ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YE-hG-27T">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0vz-6V-tzF" kind="relationship" relationship="rootViewController" id="0Yi-Wz-l1B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2L1-Yp-ikJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="828"/>
+        </scene>
+        <!--Compte-->
+        <scene sceneID="O5l-1D-O8h">
+            <objects>
+                <viewController id="0vz-6V-tzF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u9l-dB-5yb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5CF-1M-kgm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Compte" id="VFj-Bc-wWa"/>
+                    <size key="freeformSize" width="375" height="812"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctC-CM-Fab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282" y="828"/>
+        </scene>
+        <!--Statistiques-->
+        <scene sceneID="ejy-jq-DqD">
+            <objects>
+                <navigationController id="ew7-tE-xxC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Statistiques" image="ic-stats" id="QKZ-bO-1c9"/>
+                    <size key="freeformSize" width="375" height="812"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yuf-Pq-LC5">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zth-2v-Gjg" kind="relationship" relationship="rootViewController" id="jg2-a4-Uoz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gV6-Z4-LeE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1116" y="-40"/>
+        </scene>
+        <!--Statistiques-->
+        <scene sceneID="OpF-sa-4w9">
+            <objects>
+                <viewController id="zth-2v-Gjg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XB5-MK-X4S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yjc-wj-P8e"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Statistiques" id="fve-nw-oe7"/>
+                    <size key="freeformSize" width="375" height="812"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zK8-dU-1p9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-282" y="-40"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="d8f-He-zVW">
+            <objects>
+                <tabBarController id="2Zs-f7-Ihi" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <size key="freeformSize" width="375" height="812"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="xW0-Yu-qUZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="pickleColor-darkBlue"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="pickleColor-darkBlue"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="mKP-Ss-m9u" kind="relationship" relationship="viewControllers" id="xSn-Ak-HHU"/>
+                        <segue destination="ew7-tE-xxC" kind="relationship" relationship="viewControllers" id="MAU-iz-BYb"/>
+                        <segue destination="P0H-NK-qdv" kind="relationship" relationship="viewControllers" id="Aco-tf-zTa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dNX-35-nTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3143" y="-1003"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="electronics" width="300" height="210"/>
+        <image name="ic-missions" width="24" height="24"/>
+        <image name="ic-profile" width="24" height="24"/>
+        <image name="ic-stats" width="24" height="24"/>
         <namedColor name="pickleColor-darkBlue">
             <color red="0.12999999523162842" green="0.10999999940395355" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="pickleColor-pink">
-            <color red="1" green="0.83137254901960789" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
