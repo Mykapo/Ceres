@@ -1,31 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mKP-Ss-m9u">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.otf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Missions List View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--View Controller-->
+        <scene sceneID="pAP-VB-pnd">
             <objects>
-                <viewController storyboardIdentifier="MissionsListViewController" id="BYZ-38-t0r" customClass="MissionsListViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="mHe-UP-17c">
+                <viewController id="Rk6-si-F92" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZNm-9Z-lfn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Missions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QF6-pc-o4K">
+                                <rect key="frame" x="24" y="73" width="327" height="41"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="34"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2a-CI-gq5">
+                                <rect key="frame" x="24" y="146" width="327" height="335"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="electronics" translatesAutoresizingMaskIntoConstraints="NO" id="H68-at-aAU">
+                                        <rect key="frame" x="0.0" y="8" width="300" height="210"/>
+                                        <color key="backgroundColor" name="pickleColor-pink"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Énergie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-t8-jUZ">
+                                        <rect key="frame" x="0.0" y="226" width="58" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Éteindre ses appareils électriques" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyR-Fo-ZqL">
+                                        <rect key="frame" x="0.0" y="255" width="257" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="T9n-t8-jUZ" firstAttribute="top" secondItem="H68-at-aAU" secondAttribute="bottom" constant="8" id="3Wh-Lm-13U"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yyR-Fo-ZqL" secondAttribute="trailing" constant="20" symbolic="YES" id="4V8-Ii-NEj"/>
+                                    <constraint firstItem="T9n-t8-jUZ" firstAttribute="leading" secondItem="i2a-CI-gq5" secondAttribute="leading" id="6jS-lE-cVN"/>
+                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="top" secondItem="T9n-t8-jUZ" secondAttribute="bottom" constant="8" id="Mgx-XZ-2PT"/>
+                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="leading" secondItem="T9n-t8-jUZ" secondAttribute="leading" id="XqK-Ij-wOA"/>
+                                    <constraint firstItem="yyR-Fo-ZqL" firstAttribute="leading" secondItem="H68-at-aAU" secondAttribute="leading" id="YCz-zf-hPv"/>
+                                    <constraint firstAttribute="bottom" secondItem="yyR-Fo-ZqL" secondAttribute="bottom" constant="59" id="Yhr-H6-qPN"/>
+                                    <constraint firstAttribute="trailing" secondItem="T9n-t8-jUZ" secondAttribute="trailing" constant="269" id="qzP-pK-xwR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cdI-4r-hDY">
+                        <constraints>
+                            <constraint firstItem="QF6-pc-o4K" firstAttribute="leading" secondItem="Hwe-Z2-xdh" secondAttribute="leading" constant="24" id="AhD-9t-30V"/>
+                            <constraint firstItem="i2a-CI-gq5" firstAttribute="leading" secondItem="Hwe-Z2-xdh" secondAttribute="leading" constant="24" id="fBz-gZ-0bE"/>
+                            <constraint firstItem="QF6-pc-o4K" firstAttribute="top" secondItem="Hwe-Z2-xdh" secondAttribute="top" constant="53" id="fVp-mL-YHU"/>
+                            <constraint firstItem="i2a-CI-gq5" firstAttribute="top" secondItem="QF6-pc-o4K" secondAttribute="bottom" constant="32" id="ljs-kl-BFc"/>
+                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="trailing" secondItem="i2a-CI-gq5" secondAttribute="trailing" constant="24" id="pJz-KP-xa1"/>
+                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="bottom" secondItem="i2a-CI-gq5" secondAttribute="bottom" constant="331" id="pOH-sg-SLa"/>
+                            <constraint firstItem="Hwe-Z2-xdh" firstAttribute="trailing" secondItem="QF6-pc-o4K" secondAttribute="trailing" constant="24" id="r4l-tm-Qhv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hwe-Z2-xdh"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="812"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VaA-Ei-eHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634.39999999999998" y="30.584707646176913"/>
+        </scene>
+        <!--Missions List View Controller-->
+        <scene sceneID="ifc-Wd-JKB">
+            <objects>
+                <collectionViewController id="mKP-Ss-m9u" customClass="MissionsListViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="KjB-M3-RMS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ww9-X6-jsS">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="ahc-BB-YQL">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" id="N76-Gr-Ws0">
                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -34,15 +105,16 @@
                                 </view>
                             </collectionViewCell>
                         </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mKP-Ss-m9u" id="sY2-Uy-RzJ"/>
+                            <outlet property="delegate" destination="mKP-Ss-m9u" id="HBe-3h-ZjS"/>
+                        </connections>
                     </collectionView>
                     <size key="freeformSize" width="375" height="812"/>
-                    <connections>
-                        <outlet property="collectionView" destination="mHe-UP-17c" id="8vY-Ww-gqB"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTJ-WX-TWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="32"/>
+            <point key="canvasLocation" x="-1105" y="-318"/>
         </scene>
         <!--Missions Details View Controller-->
         <scene sceneID="0xe-sp-Qae">
@@ -67,4 +139,13 @@
             <point key="canvasLocation" x="950" y="31"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="electronics" width="300" height="210"/>
+        <namedColor name="pickleColor-darkBlue">
+            <color red="0.12999999523162842" green="0.10999999940395355" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pickleColor-pink">
+            <color red="1" green="0.83137254901960789" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

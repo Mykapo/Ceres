@@ -20,6 +20,12 @@ class LargeMissionCell: MissionCell {
         return ivLarge
     }()
     
+    let missionTag: UILabel = {
+        let tag = UILabel()
+        tag.applyMissionTagStyle(missionType: "energy")
+        return tag
+    }()
+    
     // Long mission title
     let missionLabel: UILabel = {
         let label = UILabel()
@@ -29,9 +35,12 @@ class LargeMissionCell: MissionCell {
         return label
     }()
     
+    
     override func setupViews() {
         largeMissionImg.translatesAutoresizingMaskIntoConstraints = false
         addSubview(largeMissionImg)
+        addSubview(missionTag)
+        addSubview(missionLabel)
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]-20-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg]))

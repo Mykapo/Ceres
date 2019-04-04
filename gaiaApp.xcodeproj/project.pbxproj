@@ -15,10 +15,11 @@
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
 		458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */; };
 		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
+		45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45971ECB22560EB80060E2BD /* MissionListHeader.swift */; };
 		459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856722521399000BCD0F /* LargeCategoryCell.swift */; };
-		459A856B2253890C000BCD0F /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856A2253890C000BCD0F /* UIImageView.swift */; };
 		459A856D225392FA000BCD0F /* LockedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856C225392FA000BCD0F /* LockedCell.swift */; };
 		459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856F22539964000BCD0F /* LargeMissionCell.swift */; };
+		459A85742253DCDC000BCD0F /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A85732253DCDC000BCD0F /* Labels.swift */; };
 		45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02EED21F9042000EA8B56 /* AppDelegate.swift */; };
 		45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02EEF21F9042000EA8B56 /* ViewController.swift */; };
 		45C02EF321F9042000EA8B56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C02EF121F9042000EA8B56 /* Main.storyboard */; };
@@ -67,10 +68,11 @@
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
 		458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormErrorMessage.swift; sourceTree = "<group>"; };
 		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
+		45971ECB22560EB80060E2BD /* MissionListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListHeader.swift; sourceTree = "<group>"; };
 		459A856722521399000BCD0F /* LargeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCategoryCell.swift; sourceTree = "<group>"; };
-		459A856A2253890C000BCD0F /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		459A856C225392FA000BCD0F /* LockedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCell.swift; sourceTree = "<group>"; };
 		459A856F22539964000BCD0F /* LargeMissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeMissionCell.swift; sourceTree = "<group>"; };
+		459A85732253DCDC000BCD0F /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		45C02EEA21F9042000EA8B56 /* gaiaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaiaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C02EED21F9042000EA8B56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C02EEF21F9042000EA8B56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				455189C8220492DF00DF0F79 /* Colors.swift */,
-				459A856A2253890C000BCD0F /* UIImageView.swift */,
+				459A85732253DCDC000BCD0F /* Labels.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +179,7 @@
 			children = (
 				45765823223BB2BC00FB7162 /* CategoryCell.swift */,
 				459A856722521399000BCD0F /* LargeCategoryCell.swift */,
+				45971ECB22560EB80060E2BD /* MissionListHeader.swift */,
 			);
 			path = "Category Cells";
 			sourceTree = "<group>";
@@ -413,12 +416,13 @@
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
-				459A856B2253890C000BCD0F /* UIImageView.swift in Sources */,
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
+				45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */,
+				459A85742253DCDC000BCD0F /* Labels.swift in Sources */,
 				459A856D225392FA000BCD0F /* LockedCell.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,

@@ -12,12 +12,16 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
     
     private let cellId = "cellId"
     private let largeCellId = "largeCellId"
+    private let headerId = "headerId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        self.setupViews()
+        
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
+//        collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
     }
     
     // Number of rows in the list
@@ -30,7 +34,7 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         
         if indexPath.item == 0 {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: largeCellId, for: indexPath) as! LargeCategoryCell
-            
+
             return cell
         }
         
@@ -48,6 +52,18 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         
         return CGSize(width: view.frame.width, height: 163)
     }
+    
+    // -- MARK : Missions List Header
+    
+//    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+//        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! MissionListHeader
+//
+//        return header
+//    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return .init(width: view.frame.width, height: 100)
+//    }
     
     // ---------- SHOW ONBOARDING ------------ //
 //    override func viewDidAppear(_ animated: Bool) {
