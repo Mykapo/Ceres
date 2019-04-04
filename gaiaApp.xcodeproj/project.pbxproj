@@ -40,6 +40,11 @@
 		45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */; };
 		45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */; };
 		45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */; };
+		492D4C6C22562AE4001D2BD3 /* Codables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D4C6B22562AE4001D2BD3 /* Codables.swift */; };
+		492D4C6E22562B6B001D2BD3 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D4C6D22562B6B001D2BD3 /* Network.swift */; };
+		492D4C7022562F27001D2BD3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D4C6F22562F27001D2BD3 /* Utils.swift */; };
+		492D4C7222562F72001D2BD3 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D4C7122562F72001D2BD3 /* Mission.swift */; };
+		492D4C7422562FC3001D2BD3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492D4C7322562FC3001D2BD3 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,11 @@
 		45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroViewController.swift; sourceTree = "<group>"; };
 		45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarPageViewController.swift; sourceTree = "<group>"; };
 		45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarContentViewController.swift; sourceTree = "<group>"; };
+		492D4C6B22562AE4001D2BD3 /* Codables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Codables.swift; sourceTree = "<group>"; };
+		492D4C6D22562B6B001D2BD3 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		492D4C6F22562F27001D2BD3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		492D4C7122562F72001D2BD3 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		492D4C7322562FC3001D2BD3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +217,7 @@
 		45C02EEC21F9042000EA8B56 /* gaiaApp */ = {
 			isa = PBXGroup;
 			children = (
+				492D4C6A22562A8D001D2BD3 /* network */,
 				458EAC192203052E009FDF75 /* UIComponents */,
 				45C02F1C21F9045900EA8B56 /* Controllers */,
 				45C02F1B21F9044F00EA8B56 /* Storyboards */,
@@ -265,6 +276,18 @@
 				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		492D4C6A22562A8D001D2BD3 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				492D4C6B22562AE4001D2BD3 /* Codables.swift */,
+				492D4C6D22562B6B001D2BD3 /* Network.swift */,
+				492D4C6F22562F27001D2BD3 /* Utils.swift */,
+				492D4C7122562F72001D2BD3 /* Mission.swift */,
+				492D4C7322562FC3001D2BD3 /* User.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,16 +429,21 @@
 			files = (
 				458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */,
 				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
+				492D4C6E22562B6B001D2BD3 /* Network.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
+				492D4C7422562FC3001D2BD3 /* User.swift in Sources */,
+				492D4C7022562F27001D2BD3 /* Utils.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
+				492D4C7222562F72001D2BD3 /* Mission.swift in Sources */,
 				45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */,
 				458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */,
 				45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */,
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
+				492D4C6C22562AE4001D2BD3 /* Codables.swift in Sources */,
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,

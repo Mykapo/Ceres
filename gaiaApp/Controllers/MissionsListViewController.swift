@@ -19,6 +19,16 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         
 //        self.setupViews()
         
+        // Load user :D
+        PickleUser.getUser() {
+            user, error in
+            
+            guard nil == error else {
+                print(error!.localizedDescription)
+                return
+            }
+        }
+        
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
 //        collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
