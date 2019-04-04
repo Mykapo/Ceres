@@ -38,11 +38,16 @@ class LargeMissionCell: MissionCell {
     
     override func setupViews() {
         largeMissionImg.translatesAutoresizingMaskIntoConstraints = false
+        missionTag.translatesAutoresizingMaskIntoConstraints = false
+        missionLabel.translatesAutoresizingMaskIntoConstraints = false
+        
         addSubview(largeMissionImg)
         addSubview(missionTag)
         addSubview(missionLabel)
         
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]-20-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg]))
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-24-[v0]-24-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-24-[tag]-24-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["tag": missionTag]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-24-[label]-24-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["label": missionLabel]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[v0][tag][label]-25-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": largeMissionImg, "tag": missionTag, "label": missionLabel]))
     }
 }
