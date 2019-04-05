@@ -32,6 +32,8 @@ class LargeMissionCell: MissionCell {
         label.text = "Éteindre ses appareils électriques"
         label.numberOfLines = 2
         label.textColor = UIColor.pickleDarkBlue
+        label.font = UIFont(name: UIFont.fontNames(forFamilyName:
+            "SF Pro Display")[1], size: 19)
         return label
     }()
     
