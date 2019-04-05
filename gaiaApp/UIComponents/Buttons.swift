@@ -12,6 +12,8 @@ import UIKit
 class PickleButton: UIButton {
     override func awakeFromNib() {
         self.layer.cornerRadius = 12.0
+        self.titleLabel?.font = UIFont(name: UIFont.fontNames(forFamilyName:
+            "SF Pro Display")[0], size: 16)
     }
     
     func setEnabledButtonStyle() {
