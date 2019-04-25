@@ -11,11 +11,15 @@ import UIKit
 extension UILabel {
     
     func applyMissionTagStyle(missionType: String) {
+        self.font = UIFont(name: UIFont.fontNames(forFamilyName:
+            "SF Pro Display")[0], size: 11)
+        self.layer.cornerRadius = 4.0
+        
         switch missionType {
             case "energy":
-                self.backgroundColor = UIColor.picklePink
+                self.backgroundColor = UIColor.picklePurple
                 self.textColor = UIColor.white
-                self.text = "Energie"
+                self.text = "Énergie"
             case "waste":
                 self.backgroundColor = UIColor.pickleLavender
                 self.textColor = UIColor.pickleDarkBlue
@@ -29,5 +33,7 @@ extension UILabel {
                 self.textColor = UIColor.pickleDarkBlue
                 self.text = "Pickle"
         }
+        
+        self.text = self.text?.uppercased()
     }
 }

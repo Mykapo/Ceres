@@ -13,6 +13,8 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     private let cellId = "missionCellId"
     private let lockedCellId = "lockedCellId"
     
+    var missionsListController: MissionsListViewController?
+    
     override init(frame: CGRect) {
         
         // call superclass' init function
@@ -60,11 +62,11 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         missionsCollectionView.register(MissionCell.self, forCellWithReuseIdentifier: cellId)
         missionsCollectionView.register(LockedCell.self, forCellWithReuseIdentifier: lockedCellId)
         
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]-20-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionCategory]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-24-[v0]-24-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionCategory]))
         
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView]))
 
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[category(30)][v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView, "category": missionCategory]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-32-[category]-8-[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": missionsCollectionView, "category": missionCategory]))
     }
     
     // -- MARK: COLLECTIONVIEW FUNCTIONS OVERRIDE
@@ -99,5 +101,9 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
 
         return CGSize(width: 200, height: frame.height)
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        missionsListController?.showMissionDetails()
+//    }
     
 }

@@ -25,7 +25,7 @@ class MissionListHeader: UICollectionViewCell {
         title.numberOfLines = 1
         title.textColor = UIColor.pickleDarkBlue
         title.font = UIFont(name: UIFont.fontNames(forFamilyName:
-            "SF Pro Display")[1], size: 34)
+            "SF Pro Display")[0], size: 34)
         return title
     }()
     
@@ -33,7 +33,7 @@ class MissionListHeader: UICollectionViewCell {
         viewTitle.translatesAutoresizingMaskIntoConstraints = false
         addSubview(viewTitle)
         
-        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-20-[v0]-20-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": viewTitle]))
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-24-[v0]-24-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": viewTitle]))
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-53-[v0]|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0": viewTitle]))
     }
     

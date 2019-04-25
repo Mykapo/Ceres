@@ -32,7 +32,7 @@ class LargeCategoryCell: CategoryCell {
 
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
-        return CGSize(width: frame.width, height: frame.height - 32)
+        return CGSize(width: frame.width, height: frame.height)
     }
     
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {

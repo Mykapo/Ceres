@@ -17,11 +17,16 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.setupViews()
-        
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
-//        collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+        
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        if let vc = sb.instantiateViewController(withIdentifier: "PopupLockedViewController") as? PopupLockedViewController {
+//
+//            vc.modalPresentationStyle = .overCurrentContext
+//            present(vc, animated: true, completion: nil)
+//        }
     }
     
     // Number of rows in the list
@@ -40,6 +45,8 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         
         let row =  collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
         
+        row.missionsListController = self
+        
         return row
     }
     
@@ -50,21 +57,27 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
             return CGSize(width: view.frame.width, height: 337)
         }
         
-        return CGSize(width: view.frame.width, height: 163)
+        return CGSize(width: view.frame.width, height: 190)
     }
     
     // -- MARK : Missions List Header
     
-//    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-//        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! MissionListHeader
-//
-//        return header
-//    }
-//
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-//        return .init(width: view.frame.width, height: 100)
-//    }
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! MissionListHeader
+
+        return header
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return .init(width: view.frame.width, height: 100)
+    }
     
+    // -- MARK : Segue to mission details view
+    
+    func showMissionDetails(){
+        let missionsDetailsController = MissionsDetailsViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(missionsDetailsController, animated: true)
+    }
     // ---------- SHOW ONBOARDING ------------ //
 //    override func viewDidAppear(_ animated: Bool) {
 //        let sb = UIStoryboard(name: "Onboarding", bundle: nil)

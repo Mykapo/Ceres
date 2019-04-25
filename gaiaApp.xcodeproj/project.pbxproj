@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF9EA22404A06004F4676 /* MissionCell.swift */; };
 		455189C9220492DF00DF0F79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455189C8220492DF00DF0F79 /* Colors.swift */; };
+		456BD6C922709BD4004D17E2 /* MissionsDetailsActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */; };
 		45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* CategoryCell.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
@@ -40,6 +41,7 @@
 		45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */; };
 		45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */; };
 		45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */; };
+		45E8E0D922575AE2002BB5C0 /* PopupLockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,7 @@
 /* Begin PBXFileReference section */
 		453CF9EA22404A06004F4676 /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
 		455189C8220492DF00DF0F79 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsActionsViewController.swift; sourceTree = "<group>"; };
 		45765823223BB2BC00FB7162 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 		45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroViewController.swift; sourceTree = "<group>"; };
 		45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarPageViewController.swift; sourceTree = "<group>"; };
 		45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarContentViewController.swift; sourceTree = "<group>"; };
+		45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupLockedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +164,7 @@
 			children = (
 				453CF9EA22404A06004F4676 /* MissionCell.swift */,
 				459A856C225392FA000BCD0F /* LockedCell.swift */,
+				45971ECB22560EB80060E2BD /* MissionListHeader.swift */,
 				459A856F22539964000BCD0F /* LargeMissionCell.swift */,
 			);
 			path = "Mission Cells";
@@ -179,7 +184,6 @@
 			children = (
 				45765823223BB2BC00FB7162 /* CategoryCell.swift */,
 				459A856722521399000BCD0F /* LargeCategoryCell.swift */,
-				45971ECB22560EB80060E2BD /* MissionListHeader.swift */,
 			);
 			path = "Category Cells";
 			sourceTree = "<group>";
@@ -263,6 +267,8 @@
 				458EAC0F22007D90009FDF75 /* ObNameViewController.swift */,
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
 				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
+				45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */,
+				456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -408,9 +414,11 @@
 				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
+				45E8E0D922575AE2002BB5C0 /* PopupLockedViewController.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
 				45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */,
+				456BD6C922709BD4004D17E2 /* MissionsDetailsActionsViewController.swift in Sources */,
 				458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */,
 				45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */,
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
