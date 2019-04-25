@@ -26,8 +26,8 @@ class MissionCell: UICollectionViewCell {
         let ivShort = UIImageView()
         ivShort.image = UIImage(named: "gourde")
         ivShort.contentMode = .scaleAspectFit
-        //        ivShort.layer.cornerRadius = 16
-        //        ivShort.layer.masksToBounds = true
+//        ivShort.layer.cornerRadius = 16
+//        ivShort.layer.masksToBounds = true
         return ivShort
     }()
 

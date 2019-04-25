@@ -13,6 +13,8 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
     private let cellId = "missionCellId"
     private let lockedCellId = "lockedCellId"
     
+    var missionsListController: MissionsListViewController?
+    
     override init(frame: CGRect) {
         
         // call superclass' init function
@@ -99,5 +101,9 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
 
         return CGSize(width: 200, height: frame.height)
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        missionsListController?.showMissionDetails()
+//    }
     
 }

@@ -45,6 +45,8 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         
         let row =  collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CategoryCell
         
+        row.missionsListController = self
+        
         return row
     }
     
@@ -70,6 +72,12 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         return .init(width: view.frame.width, height: 100)
     }
     
+    // -- MARK : Segue to mission details view
+    
+    func showMissionDetails(){
+        let missionsDetailsController = MissionsDetailsViewController(collectionViewLayout: UICollectionViewFlowLayout())
+        navigationController?.pushViewController(missionsDetailsController, animated: true)
+    }
     // ---------- SHOW ONBOARDING ------------ //
 //    override func viewDidAppear(_ animated: Bool) {
 //        let sb = UIStoryboard(name: "Onboarding", bundle: nil)

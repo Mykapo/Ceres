@@ -1,16 +1,28 @@
 //
-//  MissionsDetailsViewController.swift
+//  MissionsDetailsActionsViewController.swift
 //  gaiaApp
 //
-//  Created by Molika THAI on 29/01/2019.
+//  Created by Molika THAI on 24/04/2019.
 //  Copyright © 2019 hetic. All rights reserved.
 //
 
 import UIKit
 
-class MissionsDetailsViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
+class MissionsDetailsActionsViewController: ViewController {
     
-    @IBOutlet var missionActionsContainer: UIView!
+    @IBOutlet var alreadyDoneButton: PickleButton!
+    @IBOutlet var mainButton: PickleButton!
+    
+    
+//    @IBInspectable var isNewMission: Bool = true {
+//        didSet {
+//            if (isNewMission) {
+//
+//            } else {
+//
+//            }
+//        }
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

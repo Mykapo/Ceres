@@ -25,4 +25,11 @@ class PickleButton: UIButton {
         self.setTitleColor(UIColor.pickleGrey, for: .disabled)
         self.layer.backgroundColor = UIColor.picklePaleGrey.cgColor
     }
+    
+    func setSecondaryButtonStyle() {
+        self.setTitleColor(UIColor.pickleDarkBlue, for: .normal)
+        self.layer.backgroundColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.pickleDarkBlue.cgColor
+        self.layer.borderWidth = 1
+    }
 }
