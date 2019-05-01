@@ -50,5 +50,8 @@ extension UIColor {
     
      static let pickleLightGreen =
         UIColor(red: 154.0 / 255.0, green: 237.0 / 255.0, blue: 145.0 / 255.0, alpha: 1.0)
+    
+    static let pickleGreyPurple =
+        UIColor(red: 122.0 / 255.0, green: 119.0 / 255.0, blue: 148.0 / 255.0, alpha: 1.0)
 
 }
