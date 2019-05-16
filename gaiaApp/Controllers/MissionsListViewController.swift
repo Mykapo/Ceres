@@ -79,12 +79,12 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         navigationController?.pushViewController(missionsDetailsController, animated: true)
     }
     // ---------- SHOW ONBOARDING ------------ //
-//    override func viewDidAppear(_ animated: Bool) {
-//        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
-//        if let obVC = sb.instantiateViewController(withIdentifier: "ObIntroViewController") as? ObIntroViewController {
-//            present(obVC, animated: true, completion: nil)
-//        }
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let obVC = sb.instantiateViewController(withIdentifier: "ObIntroViewController") as? ObIntroViewController {
+            present(obVC, animated: true, completion: nil)
+        }
+    }
 
 
 }

@@ -24,7 +24,7 @@ class ObNameViewController: UIViewController {
         nameTextField.addTarget(self, action:#selector(textFieldDidChange(_:)), for:UIControl.Event.editingChanged)
     }
     
-    @IBAction func textFieldDidChange(_ sender: UITextField){
+    @IBAction func textFieldDidChange(_ sender: Any) {
         guard let username = nameTextField.text else {
             return
         }
@@ -37,16 +37,16 @@ class ObNameViewController: UIViewController {
                 return
         }
         
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
         
         nameTextField.hasError = false
         errorMessage.text = ""
         
         validateInputValue(value: username)
         
-//        if let missionListVC = sb.instantiateViewController(withIdentifier: "MissionsListViewController") as? MissionsListViewController {
-//            present(missionListVC, animated: true, completion: nil)
-//        }
+        if let levelVC = sb.instantiateViewController(withIdentifier: "ObLevelViewController") as? ObLevelViewController {
+            present(levelVC, animated: true, completion: nil)
+        }
         
     }
     
