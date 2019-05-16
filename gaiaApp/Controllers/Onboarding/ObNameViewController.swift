@@ -21,10 +21,10 @@ class ObNameViewController: UIViewController {
         nextButton.setDisabledButtonStyle()
         
         errorMessage.text = ""
-        nameTextField.addTarget(self, action:#selector(textFieldDidChange(_:)), for:UIControl.Event.editingChanged)
+        nameTextField.addTarget(self, action: #selector(textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
     }
     
-    @IBAction func textFieldDidChange(_ sender: Any) {
+    @IBAction func textFieldDidChange(_ sender:UITextField) {
         guard let username = nameTextField.text else {
             return
         }
@@ -32,22 +32,21 @@ class ObNameViewController: UIViewController {
         toggleButton(value: username)
     }
     
-    @IBAction func nameValidation(sender: UIButton){
+    @IBAction func nameValidation(_ sender:UIButton){
         guard let username = nameTextField.text else {
                 return
         }
-        
-        let sb = UIStoryboard(name: "Main", bundle: nil)
         
         nameTextField.hasError = false
         errorMessage.text = ""
         
         validateInputValue(value: username)
         
+        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
+        
         if let levelVC = sb.instantiateViewController(withIdentifier: "ObLevelViewController") as? ObLevelViewController {
             present(levelVC, animated: true, completion: nil)
         }
-        
     }
     
     func toggleButton(value: String){

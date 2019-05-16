@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nst-VO-rAp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -192,7 +192,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="editedWithSender:" destination="ReC-29-fxM" eventType="editingDidEnd" id="Nsh-5L-v2J"/>
+                                    <action selector="textFieldDidChange:" destination="ReC-29-fxM" eventType="editingDidEnd" id="UAe-W4-BM0"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSy-8X-ROy">
@@ -211,7 +211,7 @@
                                     <color key="titleColor" name="pickeColor-grey"/>
                                 </state>
                                 <connections>
-                                    <action selector="nameValidationWithSender:" destination="ReC-29-fxM" eventType="touchUpInside" id="uca-AN-xxR"/>
+                                    <action selector="nameValidation:" destination="ReC-29-fxM" eventType="touchUpInside" id="duT-Pd-Cw8"/>
                                     <segue destination="fFb-BF-k2c" kind="show" id="SVE-aO-bAx"/>
                                 </connections>
                             </button>

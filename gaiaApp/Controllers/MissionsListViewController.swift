@@ -21,6 +21,11 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
         collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = sb.instantiateViewController(withIdentifier: "PopupLockedViewController") as? PopupLockedViewController {
+            
+        }
+        
 //        let sb = UIStoryboard(name: "Main", bundle: nil)
 //        if let vc = sb.instantiateViewController(withIdentifier: "PopupLockedViewController") as? PopupLockedViewController {
 //
