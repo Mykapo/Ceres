@@ -313,6 +313,9 @@
                                     <constraint firstAttribute="height" constant="56" id="hQT-pl-ToT"/>
                                 </constraints>
                                 <state key="normal" title="Commencer l'expérience"/>
+                                <connections>
+                                    <action selector="goToMissionsList" destination="fFb-BF-k2c" eventType="touchUpInside" id="Tb6-Uc-MWi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -348,7 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lAT-W4-3Sc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-818" y="2879"/>
+            <point key="canvasLocation" x="-818" y="3085"/>
         </scene>
         <!--Ob Avatar View Controller-->
         <scene sceneID="iHg-UZ-y4P">

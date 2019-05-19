@@ -41,7 +41,11 @@ class ObNameViewController: UIViewController {
         errorMessage.text = ""
         
         validateInputValue(value: username)
-        
+
+        nextObStepLevel()
+    }
+    
+    func nextObStepLevel(){
         let sb = UIStoryboard(name: "Onboarding", bundle: nil)
         
         if let levelVC = sb.instantiateViewController(withIdentifier: "ObLevelViewController") as? ObLevelViewController {

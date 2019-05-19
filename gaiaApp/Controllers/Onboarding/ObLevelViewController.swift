@@ -56,6 +56,14 @@ class ObLevelViewController: UIViewController {
             avatar.image = UIImage(named: "plant-purple-pot-chene")
         }
     }
+    
+    @IBAction func goToMissionsList(){
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        
+        if let missionsVC = sb.instantiateViewController(withIdentifier: "MissionsListViewController") as? MissionsListViewController {
+            present(missionsVC, animated: true, completion: nil)
+        }
+    }
     /*
     // MARK: - Navigation
 
