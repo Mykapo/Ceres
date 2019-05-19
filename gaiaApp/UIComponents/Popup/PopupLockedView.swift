@@ -32,6 +32,7 @@ class PopupLockedView: UIView {
     
     private func commonInit() {
         popupView.layer.cornerRadius = 15
+        popupView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         
         parentView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         parentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
