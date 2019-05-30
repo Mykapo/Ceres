@@ -14,6 +14,12 @@
         <array key="SF-Pro-Display-Semibold.otf">
             <string>SFProDisplay-Semibold</string>
         </array>
+        <array key="SF-Pro-Text-Bold.otf">
+            <string>SFProText-Bold</string>
+        </array>
+        <array key="SF-Pro-Text-Medium.otf">
+            <string>SFProText-Medium</string>
+        </array>
         <array key="SF-Pro-Text-Regular.otf">
             <string>SFProText-Regular</string>
         </array>
@@ -330,21 +336,130 @@
         <!--Statistiques-->
         <scene sceneID="OpF-sa-4w9">
             <objects>
-                <viewController id="zth-2v-Gjg" sceneMemberID="viewController">
+                <viewController id="zth-2v-Gjg" customClass="StatsViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XB5-MK-X4S">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plus que X Pickles pour passer au niveau suivant !" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5XX-tW-7F4">
+                                <rect key="frame" x="20" y="84" width="335" height="38.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 Pickles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndA-Yf-j7w">
+                                <rect key="frame" x="20" y="138.5" width="335" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="idn-al-Sd9" customClass="PickleProgressView" customModule="gaiaApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="175.5" width="335" height="8"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="sYj-FK-KRx"/>
+                                </constraints>
+                                <color key="progressTintColor" name="pickleColor-lightGreen"/>
+                                <color key="trackTintColor" name="pickleColor-lightGrey"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-209,3 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vF-JB-KKu">
+                                <rect key="frame" x="22" y="394" width="118" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="de CO2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o0o-iV-Yvn">
+                                <rect key="frame" x="147" y="401" width="58" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-33,2 kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6TW-WB-E2B">
+                                <rect key="frame" x="22" y="440" width="102" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="de déchets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHQ-7S-74M">
+                                <rect key="frame" x="129" y="448" width="86" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-120 L" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbk-Ox-DF7">
+                                <rect key="frame" x="22" y="492" width="77" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="d'eau" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oja-rX-nTq">
+                                <rect key="frame" x="114" y="500" width="43" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njs-2x-A2E">
+                                <rect key="frame" x="20" y="199.5" width="335" height="32"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="16"/>
+                                <state key="normal" title="Comment fonctionne les Pickles ?">
+                                    <color key="titleColor" name="pickeColor-grey"/>
+                                </state>
+                                <connections>
+                                    <action selector="goToPickleHelp" destination="zth-2v-Gjg" eventType="touchUpInside" id="mp4-hy-4EW"/>
+                                    <segue destination="8O0-ME-r4q" kind="show" id="Iu7-OA-PZ3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="idn-al-Sd9" secondAttribute="trailing" constant="20" id="31k-QE-lOg"/>
+                            <constraint firstItem="5XX-tW-7F4" firstAttribute="top" secondItem="Yjc-wj-P8e" secondAttribute="top" constant="20" id="5y0-hY-5qg"/>
+                            <constraint firstAttribute="trailing" secondItem="5XX-tW-7F4" secondAttribute="trailing" constant="20" id="DvP-B9-doz"/>
+                            <constraint firstItem="ndA-Yf-j7w" firstAttribute="top" secondItem="5XX-tW-7F4" secondAttribute="bottom" constant="16" id="Qeh-QS-aJM"/>
+                            <constraint firstItem="njs-2x-A2E" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="WIC-KS-eyl"/>
+                            <constraint firstItem="ndA-Yf-j7w" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="daE-Hy-UJl"/>
+                            <constraint firstItem="5XX-tW-7F4" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="hrs-yd-G1L"/>
+                            <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="ndA-Yf-j7w" secondAttribute="trailing" constant="20" id="huj-B5-dXn"/>
+                            <constraint firstItem="njs-2x-A2E" firstAttribute="top" secondItem="idn-al-Sd9" secondAttribute="bottom" constant="16" id="khb-ex-aQQ"/>
+                            <constraint firstItem="idn-al-Sd9" firstAttribute="leading" secondItem="XB5-MK-X4S" secondAttribute="leading" constant="20" id="pCS-CB-qVT"/>
+                            <constraint firstItem="idn-al-Sd9" firstAttribute="top" secondItem="ndA-Yf-j7w" secondAttribute="bottom" constant="8" id="ri5-Kn-k7o"/>
+                            <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="njs-2x-A2E" secondAttribute="trailing" constant="20" id="t2S-7X-ghT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Yjc-wj-P8e"/>
                     </view>
                     <navigationItem key="navigationItem" title="Statistiques" id="O83-so-j8D">
                         <barButtonItem key="backBarButtonItem" title="??" id="tff-Vl-Kog"/>
                     </navigationItem>
                     <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="helpBtn" destination="njs-2x-A2E" id="RCN-29-9iA"/>
+                        <outlet property="progress" destination="idn-al-Sd9" id="zSS-Qx-5b7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zK8-dU-1p9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63" y="202"/>
+            <point key="canvasLocation" x="95" y="201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="vmS-tG-tMS">
+            <objects>
+                <viewController id="8O0-ME-r4q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFq-gx-hWk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ids-Ae-wyh"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="812"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5aD-mv-9ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="831" y="201"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d8f-He-zVW">
@@ -421,6 +536,12 @@
         </namedColor>
         <namedColor name="pickleColor-darkBlue">
             <color red="0.12999999523162842" green="0.10999999940395355" blue="0.30000001192092896" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pickleColor-lightGreen">
+            <color red="0.60392156862745094" green="0.92941176470588238" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="pickleColor-lightGrey">
+            <color red="0.77254901960784317" green="0.77254901960784317" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="pickleColor-pink">
             <color red="1" green="0.83137254901960789" blue="0.83137254901960789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

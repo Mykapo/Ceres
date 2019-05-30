@@ -19,6 +19,8 @@
 		456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397C2291C2ED00958937 /* PopupPassMissionView.swift */; };
 		456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */; };
 		45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* CategoryCell.swift */; };
+		4580873F229FB34D00695894 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580873E229FB34D00695894 /* ProgressView.swift */; };
+		45808741229FB52600695894 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45808740229FB52600695894 /* StatsViewController.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
@@ -83,6 +85,8 @@
 		456F397C2291C2ED00958937 /* PopupPassMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPassMissionView.swift; sourceTree = "<group>"; };
 		456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSuccessMissionView.swift; sourceTree = "<group>"; };
 		45765823223BB2BC00FB7162 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4580873E229FB34D00695894 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		45808740229FB52600695894 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				458EAC1B2203064C009FDF75 /* Forms */,
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
 				4517E162227A10670080998E /* Sliders.swift */,
+				4580873E229FB34D00695894 /* ProgressView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
 				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
 				456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */,
+				45808740229FB52600695894 /* StatsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -461,6 +467,7 @@
 				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
+				45808741229FB52600695894 /* StatsViewController.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
 				45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */,
@@ -474,6 +481,7 @@
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */,
+				4580873F229FB34D00695894 /* ProgressView.swift in Sources */,
 				456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
