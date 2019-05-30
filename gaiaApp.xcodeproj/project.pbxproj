@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4517E163227A10670080998E /* Sliders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517E162227A10670080998E /* Sliders.swift */; };
+		4517E165227A140E0080998E /* ObLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4517E164227A140E0080998E /* ObLevelViewController.swift */; };
 		453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453CF9EA22404A06004F4676 /* MissionCell.swift */; };
 		455189C9220492DF00DF0F79 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 455189C8220492DF00DF0F79 /* Colors.swift */; };
 		456BD6C922709BD4004D17E2 /* MissionsDetailsActionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */; };
+		456F39752291913600958937 /* PopupPassMissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456F39742291913600958937 /* PopupPassMissionView.xib */; };
+		456F39772291914400958937 /* PopupSubscribeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456F39762291914400958937 /* PopupSubscribeView.xib */; };
+		456F39792291916400958937 /* PopupSuccessMissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456F39782291916400958937 /* PopupSuccessMissionView.xib */; };
+		456F397B2291982800958937 /* PopupSubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397A2291982800958937 /* PopupSubscribeView.swift */; };
+		456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397C2291C2ED00958937 /* PopupPassMissionView.swift */; };
+		456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */; };
 		45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* CategoryCell.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
@@ -41,7 +49,8 @@
 		45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */; };
 		45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */; };
 		45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */; };
-		45E8E0D922575AE2002BB5C0 /* PopupLockedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */; };
+		45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5527C228EB32F00891A5F /* PopupLockedView.swift */; };
+		45E55280228EC1CF00891A5F /* PopupLockedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E5527F228EC1CF00891A5F /* PopupLockedView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +71,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4517E162227A10670080998E /* Sliders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sliders.swift; sourceTree = "<group>"; };
+		4517E164227A140E0080998E /* ObLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObLevelViewController.swift; sourceTree = "<group>"; };
 		453CF9EA22404A06004F4676 /* MissionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionCell.swift; sourceTree = "<group>"; };
 		455189C8220492DF00DF0F79 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsActionsViewController.swift; sourceTree = "<group>"; };
+		456F39742291913600958937 /* PopupPassMissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupPassMissionView.xib; sourceTree = "<group>"; };
+		456F39762291914400958937 /* PopupSubscribeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupSubscribeView.xib; sourceTree = "<group>"; };
+		456F39782291916400958937 /* PopupSuccessMissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupSuccessMissionView.xib; sourceTree = "<group>"; };
+		456F397A2291982800958937 /* PopupSubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSubscribeView.swift; sourceTree = "<group>"; };
+		456F397C2291C2ED00958937 /* PopupPassMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPassMissionView.swift; sourceTree = "<group>"; };
+		456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSuccessMissionView.swift; sourceTree = "<group>"; };
 		45765823223BB2BC00FB7162 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +119,8 @@
 		45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroViewController.swift; sourceTree = "<group>"; };
 		45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarPageViewController.swift; sourceTree = "<group>"; };
 		45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarContentViewController.swift; sourceTree = "<group>"; };
-		45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupLockedViewController.swift; sourceTree = "<group>"; };
+		45E5527C228EB32F00891A5F /* PopupLockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupLockedView.swift; sourceTree = "<group>"; };
+		45E5527F228EC1CF00891A5F /* PopupLockedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupLockedView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,13 +148,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456BD6CA2271EBBF004D17E2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */,
+				45C02F2621F905C900EA8B56 /* ObIntroPageViewController.swift */,
+				45C02F2821F9076200EA8B56 /* ObIntroContentViewController.swift */,
+				45C02F3021F90C5A00EA8B56 /* ObAvatarViewController.swift */,
+				45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */,
+				45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */,
+				458EAC0F22007D90009FDF75 /* ObNameViewController.swift */,
+				4517E164227A140E0080998E /* ObLevelViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		458EAC192203052E009FDF75 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				459A857122539981000BCD0F /* Missions List */,
+				45E5527E228EB33C00891A5F /* Popup */,
 				459A8569225388EE000BCD0F /* Extensions */,
+				459A857122539981000BCD0F /* Missions List */,
 				458EAC1B2203064C009FDF75 /* Forms */,
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
+				4517E162227A10670080998E /* Sliders.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -257,20 +292,28 @@
 		45C02F1C21F9045900EA8B56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				456BD6CA2271EBBF004D17E2 /* Onboarding */,
 				45C02EEF21F9042000EA8B56 /* ViewController.swift */,
-				45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */,
-				45C02F2621F905C900EA8B56 /* ObIntroPageViewController.swift */,
-				45C02F2821F9076200EA8B56 /* ObIntroContentViewController.swift */,
-				45C02F3021F90C5A00EA8B56 /* ObAvatarViewController.swift */,
-				45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */,
-				45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */,
-				458EAC0F22007D90009FDF75 /* ObNameViewController.swift */,
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
 				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
-				45E8E0D822575AE2002BB5C0 /* PopupLockedViewController.swift */,
 				456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		45E5527E228EB33C00891A5F /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				45E5527F228EC1CF00891A5F /* PopupLockedView.xib */,
+				45E5527C228EB32F00891A5F /* PopupLockedView.swift */,
+				456F39742291913600958937 /* PopupPassMissionView.xib */,
+				456F397C2291C2ED00958937 /* PopupPassMissionView.swift */,
+				456F39782291916400958937 /* PopupSuccessMissionView.xib */,
+				456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */,
+				456F39762291914400958937 /* PopupSubscribeView.xib */,
+				456F397A2291982800958937 /* PopupSubscribeView.swift */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -377,15 +420,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456F39772291914400958937 /* PopupSubscribeView.xib in Resources */,
 				45C02EF821F9042300EA8B56 /* LaunchScreen.storyboard in Resources */,
 				45C02F3521F913D300EA8B56 /* SF-Pro-Text-Bold.otf in Resources */,
 				45C02EF521F9042300EA8B56 /* Assets.xcassets in Resources */,
 				45C02F2521F904D300EA8B56 /* SF-Pro-Display-Bold.otf in Resources */,
+				456F39792291916400958937 /* PopupSuccessMissionView.xib in Resources */,
 				45C02F2421F904D300EA8B56 /* SF-Pro-Display-Semibold.otf in Resources */,
+				45E55280228EC1CF00891A5F /* PopupLockedView.xib in Resources */,
 				45C02EF321F9042000EA8B56 /* Main.storyboard in Resources */,
 				45C02F3621F913D300EA8B56 /* SF-Pro-Text-Regular.otf in Resources */,
 				45C02F2121F904C600EA8B56 /* Onboarding.storyboard in Resources */,
 				45C02F3721F913D300EA8B56 /* SF-Pro-Text-Medium.otf in Resources */,
+				456F39752291913600958937 /* PopupPassMissionView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,24 +461,29 @@
 				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
-				45E8E0D922575AE2002BB5C0 /* PopupLockedViewController.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
 				45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */,
 				456BD6C922709BD4004D17E2 /* MissionsDetailsActionsViewController.swift in Sources */,
 				458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */,
+				4517E163227A10670080998E /* Sliders.swift in Sources */,
 				45C02EF021F9042000EA8B56 /* ViewController.swift in Sources */,
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
+				45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */,
+				456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
 				45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */,
 				459A85742253DCDC000BCD0F /* Labels.swift in Sources */,
+				4517E165227A140E0080998E /* ObLevelViewController.swift in Sources */,
+				456F397B2291982800958937 /* PopupSubscribeView.swift in Sources */,
 				459A856D225392FA000BCD0F /* LockedCell.swift in Sources */,
+				456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,
 			);

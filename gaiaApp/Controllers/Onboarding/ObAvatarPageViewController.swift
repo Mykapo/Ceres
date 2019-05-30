@@ -8,19 +8,21 @@
 
 import UIKit
 
-class ObAvatarPageViewController: UIPageViewController, UIPageViewControllerDataSource {
+class ObAvatarPageViewController: UIPageViewController,UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     // MARK: - Properties
     
     var avatars = ["plant-pink-pot--thin", "plant-green-pot--wide-sad", "plant-pink-pot--wide", "plant-green-pot--round", "plant-purple-pot"]
     
     var currentIndex = 0
+    var selectedAvatarSrc = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Data source is self
         dataSource = self
+        delegate = self
         
         // First onboarding screen
         if let startVC = contentViewController(at: 0) {
@@ -58,11 +60,16 @@ class ObAvatarPageViewController: UIPageViewController, UIPageViewControllerData
             
             avatarContentViewController.avatarSrc = avatars[index]
             avatarContentViewController.index = index
+            selectedAvatarSrc = avatars[index]
             
             return avatarContentViewController
         }
         
         return nil
+    }
+
+    func nextPage() {
+        currentIndex += 1
     }
 
 }

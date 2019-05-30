@@ -102,8 +102,12 @@ class CategoryCell: UICollectionViewCell, UICollectionViewDataSource, UICollecti
         return CGSize(width: 200, height: frame.height)
     }
     
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        missionsListController?.showMissionDetails()
-//    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // Show PopupLockedView if locked mission is clicked
+        if indexPath.item == indexPath.endIndex {
+            PopupLockedView.instance.showPopup()
+        }
+    }
     
 }

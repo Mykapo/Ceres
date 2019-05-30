@@ -20,13 +20,6 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         collectionView?.register(CategoryCell.self, forCellWithReuseIdentifier: cellId)
         collectionView?.register(LargeCategoryCell.self, forCellWithReuseIdentifier: largeCellId)
         collectionView?.register(MissionListHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
-        
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        if let vc = sb.instantiateViewController(withIdentifier: "PopupLockedViewController") as? PopupLockedViewController {
-//
-//            vc.modalPresentationStyle = .overCurrentContext
-//            present(vc, animated: true, completion: nil)
-//        }
     }
     
     // Number of rows in the list
@@ -78,6 +71,7 @@ class MissionsListViewController: UICollectionViewController, UICollectionViewDe
         let missionsDetailsController = MissionsDetailsViewController(collectionViewLayout: UICollectionViewFlowLayout())
         navigationController?.pushViewController(missionsDetailsController, animated: true)
     }
+    
     // ---------- SHOW ONBOARDING ------------ //
 //    override func viewDidAppear(_ animated: Bool) {
 //        let sb = UIStoryboard(name: "Onboarding", bundle: nil)

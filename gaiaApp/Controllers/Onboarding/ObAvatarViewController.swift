@@ -12,6 +12,9 @@ class ObAvatarViewController: UIViewController {
     
     @IBOutlet var chooseButton: PickleButton!
     @IBOutlet var pageControl: UIPageControl!
+    
+    var ObAvatarPageViewController: ObAvatarPageViewController?
+    var selectedAvatarSrc = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +22,22 @@ class ObAvatarViewController: UIViewController {
         chooseButton.setEnabledButtonStyle()
     }
     
-    var ObAvatarPageViewController: ObAvatarPageViewController?
-    
     @IBAction func goToNameChoice(sender: UIButton){
         nextObStepName()
+//        nextObStepLevel()
+    }
+
+    func updatePageControl() {
+        if let index = ObAvatarPageViewController?.currentIndex {
+            pageControl.currentPage = index
+        }
+    }
+    
+    func nextObStepLevel(){
+        let sb = UIStoryboard(name: "Onboarding", bundle: nil)
+        if let nextObStepLevelVC = sb.instantiateViewController(withIdentifier: "ObLevelViewController") as? ObLevelViewController {
+            present(nextObStepLevelVC, animated: true, completion: nil)
+        }
     }
     
     func nextObStepName(){
@@ -36,6 +51,14 @@ class ObAvatarViewController: UIViewController {
         let dest = segue.destination
         if let pageViewController = dest as? ObAvatarPageViewController {
             ObAvatarPageViewController = pageViewController
+            selectedAvatarSrc = pageViewController.selectedAvatarSrc
         }
+        
+        if dest is ObLevelViewController
+        {
+            let vc = dest as? ObLevelViewController
+            vc?.selectedAvatarSrc = selectedAvatarSrc
+        }
+
     }
 }
