@@ -17,6 +17,7 @@
 		456F39792291916400958937 /* PopupSuccessMissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456F39782291916400958937 /* PopupSuccessMissionView.xib */; };
 		456F397B2291982800958937 /* PopupSubscribeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397A2291982800958937 /* PopupSubscribeView.swift */; };
 		456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397C2291C2ED00958937 /* PopupPassMissionView.swift */; };
+		456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */; };
 		45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* CategoryCell.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
@@ -80,6 +81,7 @@
 		456F39782291916400958937 /* PopupSuccessMissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupSuccessMissionView.xib; sourceTree = "<group>"; };
 		456F397A2291982800958937 /* PopupSubscribeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSubscribeView.swift; sourceTree = "<group>"; };
 		456F397C2291C2ED00958937 /* PopupPassMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPassMissionView.swift; sourceTree = "<group>"; };
+		456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSuccessMissionView.swift; sourceTree = "<group>"; };
 		45765823223BB2BC00FB7162 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
@@ -307,6 +309,7 @@
 				456F39742291913600958937 /* PopupPassMissionView.xib */,
 				456F397C2291C2ED00958937 /* PopupPassMissionView.swift */,
 				456F39782291916400958937 /* PopupSuccessMissionView.xib */,
+				456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */,
 				456F39762291914400958937 /* PopupSubscribeView.xib */,
 				456F397A2291982800958937 /* PopupSubscribeView.swift */,
 			);
@@ -471,6 +474,7 @@
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */,
+				456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
