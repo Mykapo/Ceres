@@ -414,21 +414,39 @@
                                     <segue destination="8O0-ME-r4q" kind="show" id="Iu7-OA-PZ3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 missions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cR-oY-BYo">
+                                <rect key="frame" x="20" y="255.5" width="335" height="29"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Réalisées au total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rso-VD-GqC">
+                                <rect key="frame" x="20" y="292.5" width="335" height="20"/>
+                                <fontDescription key="fontDescription" name="SFProText-Medium" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="idn-al-Sd9" secondAttribute="trailing" constant="20" id="31k-QE-lOg"/>
                             <constraint firstItem="5XX-tW-7F4" firstAttribute="top" secondItem="Yjc-wj-P8e" secondAttribute="top" constant="20" id="5y0-hY-5qg"/>
+                            <constraint firstItem="rso-VD-GqC" firstAttribute="top" secondItem="2cR-oY-BYo" secondAttribute="bottom" constant="8" id="8WB-Fl-pNQ"/>
                             <constraint firstAttribute="trailing" secondItem="5XX-tW-7F4" secondAttribute="trailing" constant="20" id="DvP-B9-doz"/>
+                            <constraint firstItem="rso-VD-GqC" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="Pab-2K-O2C"/>
                             <constraint firstItem="ndA-Yf-j7w" firstAttribute="top" secondItem="5XX-tW-7F4" secondAttribute="bottom" constant="16" id="Qeh-QS-aJM"/>
                             <constraint firstItem="njs-2x-A2E" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="WIC-KS-eyl"/>
                             <constraint firstItem="ndA-Yf-j7w" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="daE-Hy-UJl"/>
                             <constraint firstItem="5XX-tW-7F4" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="hrs-yd-G1L"/>
                             <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="ndA-Yf-j7w" secondAttribute="trailing" constant="20" id="huj-B5-dXn"/>
+                            <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="rso-VD-GqC" secondAttribute="trailing" constant="20" id="jq9-M7-CYP"/>
+                            <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="2cR-oY-BYo" secondAttribute="trailing" constant="20" id="kJb-U2-BM6"/>
                             <constraint firstItem="njs-2x-A2E" firstAttribute="top" secondItem="idn-al-Sd9" secondAttribute="bottom" constant="16" id="khb-ex-aQQ"/>
+                            <constraint firstItem="2cR-oY-BYo" firstAttribute="leading" secondItem="Yjc-wj-P8e" secondAttribute="leading" constant="20" id="o5L-37-MjR"/>
                             <constraint firstItem="idn-al-Sd9" firstAttribute="leading" secondItem="XB5-MK-X4S" secondAttribute="leading" constant="20" id="pCS-CB-qVT"/>
                             <constraint firstItem="idn-al-Sd9" firstAttribute="top" secondItem="ndA-Yf-j7w" secondAttribute="bottom" constant="8" id="ri5-Kn-k7o"/>
                             <constraint firstItem="Yjc-wj-P8e" firstAttribute="trailing" secondItem="njs-2x-A2E" secondAttribute="trailing" constant="20" id="t2S-7X-ghT"/>
+                            <constraint firstItem="2cR-oY-BYo" firstAttribute="top" secondItem="njs-2x-A2E" secondAttribute="bottom" constant="24" id="tP2-Ue-86u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yjc-wj-P8e"/>
                     </view>
@@ -445,14 +463,58 @@
             </objects>
             <point key="canvasLocation" x="95" y="201"/>
         </scene>
-        <!--View Controller-->
+        <!--Fonctionnement des Pickles-->
         <scene sceneID="vmS-tG-tMS">
             <objects>
-                <viewController id="8O0-ME-r4q" sceneMemberID="viewController">
+                <viewController title="Fonctionnement des Pickles" id="8O0-ME-r4q" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFq-gx-hWk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pourquoi ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-ZK-dHo">
+                                <rect key="frame" x="20" y="88" width="335" height="22"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-JS-sle">
+                                <rect key="frame" x="20" y="118" width="335" height="81.5"/>
+                                <string key="text">Les Pickles servent à determiner votre progression écolo. De cette façon, nous pouvons vous proposer des missions adaptées à votre niveau. </string>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment ça marche ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-9f-Iae">
+                                <rect key="frame" x="20" y="239.5" width="335" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-9v-m0A">
+                                <rect key="frame" x="20" y="269" width="335" height="142.5"/>
+                                <string key="text">Chaque mission vous permet d’acquérir des Pickles. Plus une mission à un niveau d’engagement élevé, plus il y a de Pickles à gagner. 
+
+Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! </string>
+                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                <color key="textColor" name="pickeColor-grey"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="owp-JS-sle" firstAttribute="top" secondItem="8ed-ZK-dHo" secondAttribute="bottom" constant="8" id="2HV-7c-Hwy"/>
+                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="top" secondItem="Sxb-9f-Iae" secondAttribute="bottom" constant="8" id="6wC-rf-owg"/>
+                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="8xB-TW-Mdo"/>
+                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="AtT-is-I2H"/>
+                            <constraint firstAttribute="trailing" secondItem="Iu4-9v-m0A" secondAttribute="trailing" constant="20" id="ITC-SN-cPl"/>
+                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="Msf-5D-RfB"/>
+                            <constraint firstItem="Ids-Ae-wyh" firstAttribute="trailing" secondItem="8ed-ZK-dHo" secondAttribute="trailing" constant="20" id="Pyg-cy-EaO"/>
+                            <constraint firstItem="Ids-Ae-wyh" firstAttribute="trailing" secondItem="Sxb-9f-Iae" secondAttribute="trailing" constant="20" id="TM2-mQ-63g"/>
+                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="top" secondItem="Ids-Ae-wyh" secondAttribute="top" constant="24" id="ZbT-XF-sla"/>
+                            <constraint firstItem="owp-JS-sle" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="Zbz-d9-CC4"/>
+                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="top" secondItem="owp-JS-sle" secondAttribute="bottom" constant="40" id="uNS-7C-aEZ"/>
+                            <constraint firstAttribute="trailing" secondItem="owp-JS-sle" secondAttribute="trailing" constant="20" id="vj1-C3-syb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ids-Ae-wyh"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
