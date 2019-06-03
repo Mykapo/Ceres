@@ -27,7 +27,7 @@ class StatsHelpViewController: UIViewController {
     }
     
     func initHelpLevel(){
-        levelImg.image = UIImage(named: "plant-purple-pot-pousse")
+        levelImg.image = UIImage(named: "plant-green-pot--round-pousse")
         levelName.text = levelNames[0]
         levelDesc.text = levelDescs[0]
         levelPicklesNb.text = levelPickles[0]
@@ -37,17 +37,17 @@ class StatsHelpViewController: UIViewController {
         let value = slider.value.rounded()
         
         if value < 50 {
-            levelImg.image = UIImage(named: "plant-purple-pot-pousse")
+            levelImg.image = UIImage(named: "plant-green-pot--round-pousse")
             levelName.text = levelNames[0]
             levelDesc.text = levelDescs[0]
             levelPicklesNb.text = levelPickles[0]
         } else if value < 80 {
-            levelImg.image = UIImage(named: "plant-purple-pot-arbuste")
+            levelImg.image = UIImage(named: "plant-green-pot--round-arbuste")
             levelName.text = levelNames[1]
             levelDesc.text = levelDescs[1]
             levelPicklesNb.text = levelPickles[1]
         } else {
-            levelImg.image = UIImage(named: "plant-purple-pot-chene")
+            levelImg.image = UIImage(named: "plant-green-pot--round-chene")
             levelName.text = levelNames[2]
             levelDesc.text = levelDescs[2]
             levelPicklesNb.text = levelPickles[2]
