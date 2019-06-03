@@ -87,7 +87,7 @@
         <!--Item-->
         <scene sceneID="0xe-sp-Qae">
             <objects>
-                <viewController storyboardIdentifier="MissionsDetailsViewController" id="Iy8-jx-dd6" customClass="MissionsDetailsViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MissionsDetailsViewController" id="Iy8-jx-dd6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D2M-Ig-vPi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1328"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,16 +174,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="enU-Ag-AyT" secondAttribute="trailing" id="tk8-sB-CGw"/>
                                                 </constraints>
                                             </view>
-                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ty-vN-25f">
-                                                <rect key="frame" x="0.0" y="1240" width="375" height="88"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="88" id="Vkg-7F-FlJ"/>
-                                                </constraints>
-                                                <connections>
-                                                    <segue destination="qd4-Y5-TPh" kind="embed" id="CoJ-9R-kaO"/>
-                                                </connections>
-                                            </containerView>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q2K-7f-QfN">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q2K-7f-QfN">
                                                 <rect key="frame" x="24" y="741" width="327" height="459"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="quv-EU-YCe">
@@ -215,7 +206,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="7Ty-vN-25f" secondAttribute="trailing" id="1pZ-ya-s1l"/>
                                             <constraint firstItem="cC5-Ac-gKM" firstAttribute="top" secondItem="abT-GR-DKk" secondAttribute="bottom" constant="8" id="27U-di-lWV"/>
                                             <constraint firstItem="1ce-Bj-CP5" firstAttribute="top" secondItem="Yw5-x9-7H2" secondAttribute="bottom" constant="10" id="7U9-SQ-S4F"/>
                                             <constraint firstItem="q2K-7f-QfN" firstAttribute="top" secondItem="XfC-eu-XC4" secondAttribute="top" constant="741" id="Bg8-bq-JgZ"/>
@@ -228,9 +218,7 @@
                                             <constraint firstItem="nxr-PI-iuW" firstAttribute="top" secondItem="cC5-Ac-gKM" secondAttribute="bottom" constant="40" id="QvQ-UM-iNz"/>
                                             <constraint firstItem="mPT-c1-94A" firstAttribute="top" secondItem="XfC-eu-XC4" secondAttribute="top" constant="646" id="R3E-sj-xam"/>
                                             <constraint firstAttribute="trailing" secondItem="1ce-Bj-CP5" secondAttribute="trailing" constant="24" id="Vnl-aa-mdL"/>
-                                            <constraint firstItem="7Ty-vN-25f" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" id="WDB-cV-O2z"/>
                                             <constraint firstItem="abT-GR-DKk" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" constant="24" id="Zcg-gQ-xkP"/>
-                                            <constraint firstAttribute="bottom" secondItem="7Ty-vN-25f" secondAttribute="bottom" id="apw-OP-7ya"/>
                                             <constraint firstItem="Yw5-x9-7H2" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" constant="24" id="flq-nx-u9q"/>
                                             <constraint firstItem="OKP-42-28J" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" id="gs5-9y-I56"/>
                                             <constraint firstItem="abT-GR-DKk" firstAttribute="top" secondItem="1ce-Bj-CP5" secondAttribute="bottom" constant="40" id="hQf-ye-Pys"/>
@@ -238,7 +226,6 @@
                                             <constraint firstAttribute="trailing" secondItem="nxr-PI-iuW" secondAttribute="trailing" constant="24" id="lDQ-GO-63w"/>
                                             <constraint firstItem="1ce-Bj-CP5" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" constant="24" id="pp4-Ri-Mdc"/>
                                             <constraint firstItem="mPT-c1-94A" firstAttribute="leading" secondItem="XfC-eu-XC4" secondAttribute="leading" constant="24" id="rey-LW-ebM"/>
-                                            <constraint firstItem="7Ty-vN-25f" firstAttribute="top" secondItem="q2K-7f-QfN" secondAttribute="bottom" constant="40" id="tff-94-NyF"/>
                                             <constraint firstAttribute="trailing" secondItem="mPT-c1-94A" secondAttribute="trailing" constant="24" id="vAT-6l-93d"/>
                                             <constraint firstItem="mPT-c1-94A" firstAttribute="top" secondItem="nxr-PI-iuW" secondAttribute="bottom" constant="16" id="vb8-kZ-pjc"/>
                                             <constraint firstAttribute="trailing" secondItem="Yw5-x9-7H2" secondAttribute="trailing" constant="24" id="vvJ-7n-4iq"/>
@@ -273,9 +260,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="y9b-ME-quN"/>
                     <size key="freeformSize" width="375" height="1328"/>
-                    <connections>
-                        <outlet property="missionActionsContainer" destination="7Ty-vN-25f" id="dE3-Fz-Lbf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiu-Xf-yAV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -410,7 +394,6 @@
                                     <color key="titleColor" name="pickeColor-grey"/>
                                 </state>
                                 <connections>
-                                    <action selector="goToPickleHelp" destination="zth-2v-Gjg" eventType="touchUpInside" id="mp4-hy-4EW"/>
                                     <segue destination="8O0-ME-r4q" kind="show" id="Iu7-OA-PZ3"/>
                                 </connections>
                             </button>
@@ -466,62 +449,147 @@
         <!--Fonctionnement des Pickles-->
         <scene sceneID="vmS-tG-tMS">
             <objects>
-                <viewController title="Fonctionnement des Pickles" id="8O0-ME-r4q" sceneMemberID="viewController">
+                <viewController title="Fonctionnement des Pickles" id="8O0-ME-r4q" customClass="StatsHelpViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jFq-gx-hWk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pourquoi ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-ZK-dHo">
-                                <rect key="frame" x="20" y="88" width="335" height="22"/>
-                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
-                                <color key="textColor" name="pickleColor-darkBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-JS-sle">
-                                <rect key="frame" x="20" y="118" width="335" height="81.5"/>
-                                <string key="text">Les Pickles servent à determiner votre progression écolo. De cette façon, nous pouvons vous proposer des missions adaptées à votre niveau. </string>
-                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
-                                <color key="textColor" name="pickeColor-grey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment ça marche ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-9f-Iae">
-                                <rect key="frame" x="20" y="239.5" width="335" height="21.5"/>
-                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
-                                <color key="textColor" name="pickleColor-darkBlue"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-9v-m0A">
-                                <rect key="frame" x="20" y="269" width="335" height="142.5"/>
-                                <string key="text">Chaque mission vous permet d’acquérir des Pickles. Plus une mission à un niveau d’engagement élevé, plus il y a de Pickles à gagner. 
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCe-cy-msR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="699"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwo-VF-qmq">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pourquoi ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ed-ZK-dHo">
+                                                <rect key="frame" x="20" y="24" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-JS-sle">
+                                                <rect key="frame" x="20" y="54" width="335" height="81.5"/>
+                                                <string key="text">Les Pickles servent à determiner votre progression écolo. De cette façon, nous pouvons vous proposer des missions adaptées à votre niveau. </string>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                <color key="textColor" name="pickeColor-grey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment ça marche ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-9f-Iae">
+                                                <rect key="frame" x="20" y="175.5" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-9v-m0A">
+                                                <rect key="frame" x="20" y="205.5" width="335" height="142.5"/>
+                                                <string key="text">Chaque mission vous permet d’acquérir des Pickles. Plus une mission à un niveau d’engagement élevé, plus il y a de Pickles à gagner. 
 
 Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! </string>
-                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
-                                <color key="textColor" name="pickeColor-grey"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                <color key="textColor" name="pickeColor-grey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2S-jW-KCY">
+                                                <rect key="frame" x="111" y="372" width="153" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="y2S-jW-KCY" secondAttribute="height" multiplier="153:200" id="Ei7-hS-dFI"/>
+                                                    <constraint firstAttribute="width" constant="153" id="UHN-6x-XCE"/>
+                                                    <constraint firstAttribute="height" constant="200" id="tnD-0z-ICY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-ly-QQd" customClass="PickleSlider" customModule="gaiaApp" customModuleProvider="target">
+                                                <rect key="frame" x="18" y="596" width="339" height="31"/>
+                                                <color key="tintColor" name="pickleColor-lightGreen"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="sliderMoved:" destination="8O0-ME-r4q" eventType="valueChanged" id="Tr5-cw-cwf"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-6Q-HZ5">
+                                                <rect key="frame" x="20" y="680" width="335" height="20.5"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
+                                                <color key="textColor" name="pickeColor-grey"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de pickles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-cW-eAt">
+                                                <rect key="frame" x="20" y="708.5" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" name="pickleColor-lightGreen"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXF-PX-agr">
+                                                <rect key="frame" x="20" y="650" width="335" height="22"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
+                                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="dXF-PX-agr" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="3Bi-Yk-umZ"/>
+                                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="top" secondItem="owp-JS-sle" secondAttribute="bottom" constant="40" id="3Uo-lB-HM7"/>
+                                            <constraint firstAttribute="trailing" secondItem="Iu4-9v-m0A" secondAttribute="trailing" constant="20" id="4cf-5R-SJV"/>
+                                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="top" secondItem="Sxb-9f-Iae" secondAttribute="bottom" constant="8" id="5jZ-MF-MR2"/>
+                                            <constraint firstItem="aZs-cW-eAt" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="8qc-2J-Set"/>
+                                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="BDM-U9-Zne"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sxb-9f-Iae" secondAttribute="trailing" constant="20" id="Dcu-Jp-MTC"/>
+                                            <constraint firstItem="Nl2-6Q-HZ5" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="EId-C3-KYh"/>
+                                            <constraint firstAttribute="trailing" secondItem="dXF-PX-agr" secondAttribute="trailing" constant="20" id="G97-Mc-yHT"/>
+                                            <constraint firstItem="y2S-jW-KCY" firstAttribute="centerX" secondItem="zwo-VF-qmq" secondAttribute="centerX" id="GCw-by-Qrd"/>
+                                            <constraint firstItem="WYd-ly-QQd" firstAttribute="top" secondItem="y2S-jW-KCY" secondAttribute="bottom" constant="24" id="J4i-Fe-BHh"/>
+                                            <constraint firstAttribute="trailing" secondItem="aZs-cW-eAt" secondAttribute="trailing" constant="20" id="KlL-g0-jQX"/>
+                                            <constraint firstItem="dXF-PX-agr" firstAttribute="top" secondItem="WYd-ly-QQd" secondAttribute="bottom" constant="24" id="O7T-UV-b0I"/>
+                                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="top" secondItem="zwo-VF-qmq" secondAttribute="top" constant="24" id="TCF-qw-iuU"/>
+                                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="Tok-Bx-gif"/>
+                                            <constraint firstItem="owp-JS-sle" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="VQh-o8-L5N"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nl2-6Q-HZ5" secondAttribute="trailing" constant="20" id="ZHs-eL-vjH"/>
+                                            <constraint firstAttribute="trailing" secondItem="WYd-ly-QQd" secondAttribute="trailing" constant="20" id="dV9-wZ-u4b"/>
+                                            <constraint firstItem="aZs-cW-eAt" firstAttribute="top" secondItem="Nl2-6Q-HZ5" secondAttribute="bottom" constant="8" id="dqy-oV-yKd"/>
+                                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="gAf-S5-pNQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="8ed-ZK-dHo" secondAttribute="trailing" constant="20" id="iKU-gm-wTs"/>
+                                            <constraint firstItem="Nl2-6Q-HZ5" firstAttribute="top" secondItem="dXF-PX-agr" secondAttribute="bottom" constant="8" id="n5d-HF-9vv"/>
+                                            <constraint firstItem="y2S-jW-KCY" firstAttribute="top" secondItem="Iu4-9v-m0A" secondAttribute="bottom" constant="24" id="nu5-uI-pZt"/>
+                                            <constraint firstAttribute="trailing" secondItem="owp-JS-sle" secondAttribute="trailing" constant="20" id="roE-ja-f5h"/>
+                                            <constraint firstAttribute="height" constant="1200" id="yFB-rO-PIN"/>
+                                            <constraint firstItem="WYd-ly-QQd" firstAttribute="leading" secondItem="zwo-VF-qmq" secondAttribute="leading" constant="20" id="zSR-O7-fCk"/>
+                                            <constraint firstItem="owp-JS-sle" firstAttribute="top" secondItem="8ed-ZK-dHo" secondAttribute="bottom" constant="8" id="zT5-Gx-7Rh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zwo-VF-qmq" secondAttribute="bottom" constant="-501" id="BjU-xL-ByS"/>
+                                    <constraint firstItem="zwo-VF-qmq" firstAttribute="top" secondItem="SCe-cy-msR" secondAttribute="top" id="EkQ-Qt-bjc"/>
+                                    <constraint firstItem="zwo-VF-qmq" firstAttribute="leading" secondItem="SCe-cy-msR" secondAttribute="leading" id="Wge-Sz-HtI"/>
+                                    <constraint firstAttribute="trailing" secondItem="zwo-VF-qmq" secondAttribute="trailing" id="zOU-33-eMl"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="owp-JS-sle" firstAttribute="top" secondItem="8ed-ZK-dHo" secondAttribute="bottom" constant="8" id="2HV-7c-Hwy"/>
-                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="top" secondItem="Sxb-9f-Iae" secondAttribute="bottom" constant="8" id="6wC-rf-owg"/>
-                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="8xB-TW-Mdo"/>
-                            <constraint firstItem="Iu4-9v-m0A" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="AtT-is-I2H"/>
-                            <constraint firstAttribute="trailing" secondItem="Iu4-9v-m0A" secondAttribute="trailing" constant="20" id="ITC-SN-cPl"/>
-                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="Msf-5D-RfB"/>
-                            <constraint firstItem="Ids-Ae-wyh" firstAttribute="trailing" secondItem="8ed-ZK-dHo" secondAttribute="trailing" constant="20" id="Pyg-cy-EaO"/>
-                            <constraint firstItem="Ids-Ae-wyh" firstAttribute="trailing" secondItem="Sxb-9f-Iae" secondAttribute="trailing" constant="20" id="TM2-mQ-63g"/>
-                            <constraint firstItem="8ed-ZK-dHo" firstAttribute="top" secondItem="Ids-Ae-wyh" secondAttribute="top" constant="24" id="ZbT-XF-sla"/>
-                            <constraint firstItem="owp-JS-sle" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" constant="20" id="Zbz-d9-CC4"/>
-                            <constraint firstItem="Sxb-9f-Iae" firstAttribute="top" secondItem="owp-JS-sle" secondAttribute="bottom" constant="40" id="uNS-7C-aEZ"/>
-                            <constraint firstAttribute="trailing" secondItem="owp-JS-sle" secondAttribute="trailing" constant="20" id="vj1-C3-syb"/>
+                            <constraint firstItem="zwo-VF-qmq" firstAttribute="width" secondItem="jFq-gx-hWk" secondAttribute="width" id="4oe-Ta-ida"/>
+                            <constraint firstItem="SCe-cy-msR" firstAttribute="centerX" secondItem="jFq-gx-hWk" secondAttribute="centerX" id="JmQ-Co-Ne8"/>
+                            <constraint firstItem="Ids-Ae-wyh" firstAttribute="trailing" secondItem="SCe-cy-msR" secondAttribute="trailing" id="YT3-sa-ngA"/>
+                            <constraint firstItem="SCe-cy-msR" firstAttribute="bottom" secondItem="Ids-Ae-wyh" secondAttribute="bottom" id="a00-Ii-LHr"/>
+                            <constraint firstItem="SCe-cy-msR" firstAttribute="leading" secondItem="Ids-Ae-wyh" secondAttribute="leading" id="bkX-cP-dvw"/>
+                            <constraint firstItem="SCe-cy-msR" firstAttribute="top" secondItem="Ids-Ae-wyh" secondAttribute="top" id="yN5-7y-nTa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ids-Ae-wyh"/>
                     </view>
                     <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="levelDesc" destination="Nl2-6Q-HZ5" id="iz9-ae-Kbb"/>
+                        <outlet property="levelImg" destination="y2S-jW-KCY" id="mFa-tB-LyK"/>
+                        <outlet property="levelName" destination="dXF-PX-agr" id="wya-u3-gvh"/>
+                        <outlet property="levelPicklesNb" destination="aZs-cW-eAt" id="VH9-Kf-96n"/>
+                        <outlet property="levelSlider" destination="WYd-ly-QQd" id="cuT-xG-MYN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5aD-mv-9ad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831" y="201"/>
+            <point key="canvasLocation" x="829.60000000000002" y="200.59970014992504"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d8f-He-zVW">
@@ -547,23 +615,23 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
             </objects>
             <point key="canvasLocation" x="-3276" y="-1037"/>
         </scene>
-        <!--Missions Details Actions View Controller-->
+        <!--View Controller-->
         <scene sceneID="4jD-Xf-gdS">
             <objects>
-                <viewController id="qd4-Y5-TPh" customClass="MissionsDetailsActionsViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qd4-Y5-TPh" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKE-4U-Wmw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CW-0M-rad">
-                                <rect key="frame" x="36" y="16" width="46" height="56"/>
+                                <rect key="frame" x="36" y="36" width="46" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="Osx-G8-AOY"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6iD-7m-ofQ">
-                                <rect key="frame" x="90" y="16" width="249" height="56"/>
+                                <rect key="frame" x="90" y="36" width="249" height="56"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="YTm-Ck-Wdj"/>
                                 </constraints>
