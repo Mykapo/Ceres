@@ -26,6 +26,7 @@
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
 		458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */; };
 		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
+		4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */; };
 		45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45971ECB22560EB80060E2BD /* MissionListHeader.swift */; };
 		459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856722521399000BCD0F /* LargeCategoryCell.swift */; };
 		459A856D225392FA000BCD0F /* LockedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856C225392FA000BCD0F /* LockedCell.swift */; };
@@ -93,6 +94,7 @@
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
 		458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormErrorMessage.swift; sourceTree = "<group>"; };
 		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
+		4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsMissionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		45971ECB22560EB80060E2BD /* MissionListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListHeader.swift; sourceTree = "<group>"; };
 		459A856722521399000BCD0F /* LargeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCategoryCell.swift; sourceTree = "<group>"; };
 		459A856C225392FA000BCD0F /* LockedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCell.swift; sourceTree = "<group>"; };
@@ -190,6 +192,14 @@
 				458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */,
 			);
 			path = Forms;
+			sourceTree = "<group>";
+		};
+		4596936822A68D9B00DEF8EB /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */,
+			);
+			path = Stats;
 			sourceTree = "<group>";
 		};
 		459A8569225388EE000BCD0F /* Extensions */ = {
@@ -299,6 +309,7 @@
 		45C02F1C21F9045900EA8B56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4596936822A68D9B00DEF8EB /* Stats */,
 				456BD6CA2271EBBF004D17E2 /* Onboarding */,
 				45C02EEF21F9042000EA8B56 /* ViewController.swift */,
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
@@ -497,6 +508,7 @@
 				459A856D225392FA000BCD0F /* LockedCell.swift in Sources */,
 				456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
+				4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
