@@ -118,33 +118,33 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Catégorie de la mission" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-x9-7H2">
-                                                <rect key="frame" x="24" y="272" width="327" height="30"/>
+                                                <rect key="frame" x="24" y="272" width="327" height="26"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="21"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ce-Bj-CP5">
-                                                <rect key="frame" x="24" y="312" width="327" height="79.5"/>
+                                                <rect key="frame" x="24" y="308" width="327" height="81.5"/>
                                                 <string key="text">Un titre de mission bien trop long Un titre de mission bien trop long Un titre de mission bien trop long Un titre de mission bien trop long </string>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pourquoi ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abT-GR-DKk">
-                                                <rect key="frame" x="24" y="431.5" width="327" height="24.5"/>
+                                                <rect key="frame" x="24" y="429.5" width="327" height="25.5"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="21"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cC5-Ac-gKM">
-                                                <rect key="frame" x="24" y="464" width="327" height="101.5"/>
+                                                <rect key="frame" x="24" y="463" width="327" height="101.5"/>
                                                 <string key="text">Les appareils électroniques en veille représentent 11% de votre consommation annuelle. À l'échelle nationale, cela équivaut à la production de deux réacteurs nucléaires !</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quelques pickles..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxr-PI-iuW">
-                                                <rect key="frame" x="24" y="605.5" width="327" height="24.5"/>
+                                                <rect key="frame" x="24" y="604.5" width="327" height="25.5"/>
                                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="21"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
@@ -558,20 +558,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-JS-sle">
-                                                <rect key="frame" x="20" y="53" width="335" height="81.5"/>
+                                                <rect key="frame" x="20" y="53" width="335" height="79.5"/>
                                                 <string key="text">Les Pickles servent à determiner votre progression écolo. De cette façon, nous pouvons vous proposer des missions adaptées à votre niveau. </string>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment ça marche ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-9f-Iae">
-                                                <rect key="frame" x="20" y="174.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="172.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-9v-m0A">
-                                                <rect key="frame" x="20" y="203.5" width="335" height="142.5"/>
+                                                <rect key="frame" x="20" y="201.5" width="335" height="139"/>
                                                 <string key="text">Chaque mission vous permet d’acquérir des Pickles. Plus une mission à un niveau d’engagement élevé, plus il y a de Pickles à gagner. 
 
 Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! </string>
@@ -580,7 +580,7 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2S-jW-KCY">
-                                                <rect key="frame" x="111" y="370" width="153" height="200"/>
+                                                <rect key="frame" x="111" y="364.5" width="153" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="y2S-jW-KCY" secondAttribute="height" multiplier="153:200" id="Ei7-hS-dFI"/>
                                                     <constraint firstAttribute="width" constant="153" id="UHN-6x-XCE"/>
@@ -588,7 +588,7 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 </constraints>
                                             </imageView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-ly-QQd" customClass="PickleSlider" customModule="gaiaApp" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="594" width="339" height="31"/>
+                                                <rect key="frame" x="18" y="588.5" width="339" height="31"/>
                                                 <color key="tintColor" name="pickleColor-lightGreen"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
@@ -600,19 +600,19 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-6Q-HZ5">
-                                                <rect key="frame" x="20" y="677" width="335" height="20.5"/>
+                                                <rect key="frame" x="20" y="671.5" width="335" height="20"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de pickles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-cW-eAt">
-                                                <rect key="frame" x="20" y="705.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="699.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-lightGreen"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXF-PX-agr">
-                                                <rect key="frame" x="20" y="648" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="642.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>

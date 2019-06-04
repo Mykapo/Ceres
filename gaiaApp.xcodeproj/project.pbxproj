@@ -26,6 +26,8 @@
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
 		458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */; };
 		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
+		4595377822A6B02B0034FD5D /* PopupAcceptMissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4595377722A6B02B0034FD5D /* PopupAcceptMissionView.xib */; };
+		4595377A22A6B03D0034FD5D /* PopupAcceptMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595377922A6B03D0034FD5D /* PopupAcceptMissionView.swift */; };
 		4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */; };
 		45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45971ECB22560EB80060E2BD /* MissionListHeader.swift */; };
 		459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856722521399000BCD0F /* LargeCategoryCell.swift */; };
@@ -94,6 +96,8 @@
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
 		458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormErrorMessage.swift; sourceTree = "<group>"; };
 		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
+		4595377722A6B02B0034FD5D /* PopupAcceptMissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupAcceptMissionView.xib; sourceTree = "<group>"; };
+		4595377922A6B03D0034FD5D /* PopupAcceptMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAcceptMissionView.swift; sourceTree = "<group>"; };
 		4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsMissionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		45971ECB22560EB80060E2BD /* MissionListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListHeader.swift; sourceTree = "<group>"; };
 		459A856722521399000BCD0F /* LargeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCategoryCell.swift; sourceTree = "<group>"; };
@@ -332,6 +336,8 @@
 				456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */,
 				456F39762291914400958937 /* PopupSubscribeView.xib */,
 				456F397A2291982800958937 /* PopupSubscribeView.swift */,
+				4595377722A6B02B0034FD5D /* PopupAcceptMissionView.xib */,
+				4595377922A6B03D0034FD5D /* PopupAcceptMissionView.swift */,
 			);
 			path = Popup;
 			sourceTree = "<group>";
@@ -448,6 +454,7 @@
 				456F39792291916400958937 /* PopupSuccessMissionView.xib in Resources */,
 				45C02F2421F904D300EA8B56 /* SF-Pro-Display-Semibold.otf in Resources */,
 				45E55280228EC1CF00891A5F /* PopupLockedView.xib in Resources */,
+				4595377822A6B02B0034FD5D /* PopupAcceptMissionView.xib in Resources */,
 				45C02EF321F9042000EA8B56 /* Main.storyboard in Resources */,
 				45C02F3621F913D300EA8B56 /* SF-Pro-Text-Regular.otf in Resources */,
 				45C02F2121F904C600EA8B56 /* Onboarding.storyboard in Resources */,
@@ -501,6 +508,7 @@
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
 				458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */,
+				4595377A22A6B03D0034FD5D /* PopupAcceptMissionView.swift in Sources */,
 				45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */,
 				459A85742253DCDC000BCD0F /* Labels.swift in Sources */,
 				4517E165227A140E0080998E /* ObLevelViewController.swift in Sources */,
