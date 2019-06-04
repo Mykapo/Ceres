@@ -19,11 +19,14 @@
 		456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397C2291C2ED00958937 /* PopupPassMissionView.swift */; };
 		456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */; };
 		45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45765823223BB2BC00FB7162 /* CategoryCell.swift */; };
+		4580873F229FB34D00695894 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4580873E229FB34D00695894 /* ProgressView.swift */; };
+		45808741229FB52600695894 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45808740229FB52600695894 /* StatsViewController.swift */; };
 		458EAC1022007D90009FDF75 /* ObNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC0F22007D90009FDF75 /* ObNameViewController.swift */; };
 		458EAC122200807C009FDF75 /* MissionsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */; };
 		458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC152201C201009FDF75 /* UsernameTextField.swift */; };
 		458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */; };
 		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
+		4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */; };
 		45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45971ECB22560EB80060E2BD /* MissionListHeader.swift */; };
 		459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856722521399000BCD0F /* LargeCategoryCell.swift */; };
 		459A856D225392FA000BCD0F /* LockedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856C225392FA000BCD0F /* LockedCell.swift */; };
@@ -49,6 +52,7 @@
 		45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */; };
 		45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */; };
 		45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */; };
+		45E1822022A522920055F48A /* StatsHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E1821F22A522920055F48A /* StatsHelpViewController.swift */; };
 		45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E5527C228EB32F00891A5F /* PopupLockedView.swift */; };
 		45E55280228EC1CF00891A5F /* PopupLockedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45E5527F228EC1CF00891A5F /* PopupLockedView.xib */; };
 /* End PBXBuildFile section */
@@ -83,11 +87,14 @@
 		456F397C2291C2ED00958937 /* PopupPassMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPassMissionView.swift; sourceTree = "<group>"; };
 		456F397E2291C68E00958937 /* PopupSuccessMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupSuccessMissionView.swift; sourceTree = "<group>"; };
 		45765823223BB2BC00FB7162 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		4580873E229FB34D00695894 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		45808740229FB52600695894 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		458EAC0F22007D90009FDF75 /* ObNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObNameViewController.swift; sourceTree = "<group>"; };
 		458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsDetailsViewController.swift; sourceTree = "<group>"; };
 		458EAC152201C201009FDF75 /* UsernameTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameTextField.swift; sourceTree = "<group>"; };
 		458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormErrorMessage.swift; sourceTree = "<group>"; };
 		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
+		4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsMissionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		45971ECB22560EB80060E2BD /* MissionListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListHeader.swift; sourceTree = "<group>"; };
 		459A856722521399000BCD0F /* LargeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCategoryCell.swift; sourceTree = "<group>"; };
 		459A856C225392FA000BCD0F /* LockedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCell.swift; sourceTree = "<group>"; };
@@ -119,6 +126,7 @@
 		45C02F3821F91B0C00EA8B56 /* ObIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObIntroViewController.swift; sourceTree = "<group>"; };
 		45E04C3D21FE7EA300519767 /* ObAvatarPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarPageViewController.swift; sourceTree = "<group>"; };
 		45E04C3F21FE7FC900519767 /* ObAvatarContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObAvatarContentViewController.swift; sourceTree = "<group>"; };
+		45E1821F22A522920055F48A /* StatsHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsHelpViewController.swift; sourceTree = "<group>"; };
 		45E5527C228EB32F00891A5F /* PopupLockedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupLockedView.swift; sourceTree = "<group>"; };
 		45E5527F228EC1CF00891A5F /* PopupLockedView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupLockedView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +180,7 @@
 				458EAC1B2203064C009FDF75 /* Forms */,
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
 				4517E162227A10670080998E /* Sliders.swift */,
+				4580873E229FB34D00695894 /* ProgressView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -183,6 +192,14 @@
 				458EAC1C22033AF2009FDF75 /* FormErrorMessage.swift */,
 			);
 			path = Forms;
+			sourceTree = "<group>";
+		};
+		4596936822A68D9B00DEF8EB /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */,
+			);
+			path = Stats;
 			sourceTree = "<group>";
 		};
 		459A8569225388EE000BCD0F /* Extensions */ = {
@@ -292,11 +309,14 @@
 		45C02F1C21F9045900EA8B56 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4596936822A68D9B00DEF8EB /* Stats */,
 				456BD6CA2271EBBF004D17E2 /* Onboarding */,
 				45C02EEF21F9042000EA8B56 /* ViewController.swift */,
 				458EAC112200807C009FDF75 /* MissionsDetailsViewController.swift */,
 				458EAC1E22034187009FDF75 /* MissionsListViewController.swift */,
 				456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */,
+				45808740229FB52600695894 /* StatsViewController.swift */,
+				45E1821F22A522920055F48A /* StatsHelpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -461,6 +481,7 @@
 				455189C9220492DF00DF0F79 /* Colors.swift in Sources */,
 				45E04C3E21FE7EA300519767 /* ObAvatarPageViewController.swift in Sources */,
 				45C02F2F21F90B1900EA8B56 /* Buttons.swift in Sources */,
+				45808741229FB52600695894 /* StatsViewController.swift in Sources */,
 				45E04C4021FE7FC900519767 /* ObAvatarContentViewController.swift in Sources */,
 				45C02F3921F91B0C00EA8B56 /* ObIntroViewController.swift in Sources */,
 				45765824223BB2BC00FB7162 /* CategoryCell.swift in Sources */,
@@ -471,9 +492,11 @@
 				45C02F2921F9076200EA8B56 /* ObIntroContentViewController.swift in Sources */,
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
+				45E1822022A522920055F48A /* StatsHelpViewController.swift in Sources */,
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */,
+				4580873F229FB34D00695894 /* ProgressView.swift in Sources */,
 				456F397F2291C68E00958937 /* PopupSuccessMissionView.swift in Sources */,
 				458EAC162201C201009FDF75 /* UsernameTextField.swift in Sources */,
 				459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */,
@@ -485,6 +508,7 @@
 				459A856D225392FA000BCD0F /* LockedCell.swift in Sources */,
 				456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
+				4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
