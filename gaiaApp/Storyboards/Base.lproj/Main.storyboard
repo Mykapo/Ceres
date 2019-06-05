@@ -268,40 +268,6 @@
             </objects>
             <point key="canvasLocation" x="-159.19999999999999" y="-882.45877061469275"/>
         </scene>
-        <!--Compte-->
-        <scene sceneID="0uB-ay-L3I">
-            <objects>
-                <navigationController id="P0H-NK-qdv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Compte" image="ic-profile" id="Rnp-D1-JBQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8YE-hG-27T">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="0vz-6V-tzF" kind="relationship" relationship="rootViewController" id="0Yi-Wz-l1B"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2L1-Yp-ikJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1095" y="1017"/>
-        </scene>
-        <!--Compte-->
-        <scene sceneID="O5l-1D-O8h">
-            <objects>
-                <viewController id="0vz-6V-tzF" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="u9l-dB-5yb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5CF-1M-kgm"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Compte" id="VFj-Bc-wWa"/>
-                    <size key="freeformSize" width="375" height="812"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ctC-CM-Fab" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-145" y="1018"/>
-        </scene>
         <!--Statistiques-->
         <scene sceneID="ejy-jq-DqD">
             <objects>
@@ -558,20 +524,20 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owp-JS-sle">
-                                                <rect key="frame" x="20" y="53" width="335" height="79.5"/>
+                                                <rect key="frame" x="20" y="53" width="335" height="81.5"/>
                                                 <string key="text">Les Pickles servent à determiner votre progression écolo. De cette façon, nous pouvons vous proposer des missions adaptées à votre niveau. </string>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment ça marche ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sxb-9f-Iae">
-                                                <rect key="frame" x="20" y="172.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="174.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu4-9v-m0A">
-                                                <rect key="frame" x="20" y="201.5" width="335" height="139"/>
+                                                <rect key="frame" x="20" y="203.5" width="335" height="142.5"/>
                                                 <string key="text">Chaque mission vous permet d’acquérir des Pickles. Plus une mission à un niveau d’engagement élevé, plus il y a de Pickles à gagner. 
 
 Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! </string>
@@ -580,7 +546,7 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y2S-jW-KCY">
-                                                <rect key="frame" x="111" y="364.5" width="153" height="200"/>
+                                                <rect key="frame" x="111" y="370" width="153" height="200"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="y2S-jW-KCY" secondAttribute="height" multiplier="153:200" id="Ei7-hS-dFI"/>
                                                     <constraint firstAttribute="width" constant="153" id="UHN-6x-XCE"/>
@@ -588,7 +554,7 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 </constraints>
                                             </imageView>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="WYd-ly-QQd" customClass="PickleSlider" customModule="gaiaApp" customModuleProvider="target">
-                                                <rect key="frame" x="18" y="588.5" width="339" height="31"/>
+                                                <rect key="frame" x="18" y="594" width="339" height="31"/>
                                                 <color key="tintColor" name="pickleColor-lightGreen"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="trackWidth">
@@ -600,19 +566,19 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nl2-6Q-HZ5">
-                                                <rect key="frame" x="20" y="671.5" width="335" height="20"/>
+                                                <rect key="frame" x="20" y="677" width="335" height="20.5"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="17"/>
                                                 <color key="textColor" name="pickeColor-grey"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de pickles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aZs-cW-eAt">
-                                                <rect key="frame" x="20" y="699.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="705.5" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-lightGreen"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXF-PX-agr">
-                                                <rect key="frame" x="20" y="642.5" width="335" height="21"/>
+                                                <rect key="frame" x="20" y="648" width="335" height="21"/>
                                                 <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="18"/>
                                                 <color key="textColor" name="pickleColor-darkBlue"/>
                                                 <nil key="highlightedColor"/>
@@ -699,7 +665,7 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                     <connections>
                         <segue destination="Msa-i5-64j" kind="relationship" relationship="viewControllers" id="Vk2-cf-fiv"/>
                         <segue destination="ew7-tE-xxC" kind="relationship" relationship="viewControllers" id="MAU-iz-BYb"/>
-                        <segue destination="P0H-NK-qdv" kind="relationship" relationship="viewControllers" id="Aco-tf-zTa"/>
+                        <segue destination="jdo-8Y-hXl" kind="relationship" relationship="viewControllers" id="yw8-TX-E4i"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dNX-35-nTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -745,6 +711,63 @@ Une fois une mission réussie, les Pickles sont ajoutés à votre progression ! 
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhe-DS-JOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="854" y="-1440"/>
+        </scene>
+        <!--Mon Compte-->
+        <scene sceneID="s4H-Nk-mtJ">
+            <objects>
+                <viewController title="Mon Compte" id="jdo-8Y-hXl" customClass="AccountViewController" customModule="gaiaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eB4-c0-yNS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="763"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pour accéder à vos paramètres, vous devez vous inscrire" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-RM-ut9">
+                                <rect key="frame" x="20" y="152" width="335" height="57.5"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="24"/>
+                                <color key="textColor" name="pickleColor-darkBlue"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3XA-3s-Lna">
+                                <rect key="frame" x="74" y="289.5" width="227" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="341" id="1jP-65-v0l"/>
+                                    <constraint firstAttribute="width" constant="227" id="GY1-pV-a7D"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2i-93-2WQ" customClass="PickleButton" customModule="gaiaApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="670.5" width="335" height="56"/>
+                                <color key="backgroundColor" name="pickleColor-darkBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="pyv-au-nui"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFProText-Bold" family="SF Pro Text" pointSize="16"/>
+                                <state key="normal" title="Je m'inscris">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aqd-RM-ut9" firstAttribute="top" secondItem="nCC-2g-cYL" secondAttribute="top" constant="88" id="7HR-E6-hrj"/>
+                            <constraint firstItem="3XA-3s-Lna" firstAttribute="centerX" secondItem="eB4-c0-yNS" secondAttribute="centerX" id="Dfs-Fh-VQV"/>
+                            <constraint firstItem="3XA-3s-Lna" firstAttribute="centerY" secondItem="eB4-c0-yNS" secondAttribute="centerY" constant="78.5" id="Kpm-ie-9mA"/>
+                            <constraint firstItem="F2i-93-2WQ" firstAttribute="leading" secondItem="nCC-2g-cYL" secondAttribute="leading" constant="20" id="WsX-eP-WuC"/>
+                            <constraint firstItem="aqd-RM-ut9" firstAttribute="leading" secondItem="nCC-2g-cYL" secondAttribute="leading" constant="20" id="bZQ-OL-Vz6"/>
+                            <constraint firstItem="F2i-93-2WQ" firstAttribute="top" secondItem="3XA-3s-Lna" secondAttribute="bottom" constant="40" id="gon-yH-AzN"/>
+                            <constraint firstItem="3XA-3s-Lna" firstAttribute="top" secondItem="aqd-RM-ut9" secondAttribute="bottom" constant="80" id="jkJ-U2-K5b"/>
+                            <constraint firstAttribute="trailing" secondItem="aqd-RM-ut9" secondAttribute="trailing" constant="20" id="mfW-nr-d00"/>
+                            <constraint firstItem="nCC-2g-cYL" firstAttribute="trailing" secondItem="F2i-93-2WQ" secondAttribute="trailing" constant="20" id="nhP-G6-D0r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nCC-2g-cYL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mon compte" image="ic-profile" id="5NG-nk-Vzj"/>
+                    <size key="freeformSize" width="375" height="812"/>
+                    <connections>
+                        <outlet property="gif" destination="3XA-3s-Lna" id="z0j-n5-eHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T6o-HM-lMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2026" y="497"/>
         </scene>
     </scenes>
     <resources>

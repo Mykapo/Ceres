@@ -28,6 +28,9 @@
 		458EAC1F22034187009FDF75 /* MissionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 458EAC1E22034187009FDF75 /* MissionsListViewController.swift */; };
 		4595377822A6B02B0034FD5D /* PopupAcceptMissionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4595377722A6B02B0034FD5D /* PopupAcceptMissionView.xib */; };
 		4595377A22A6B03D0034FD5D /* PopupAcceptMissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595377922A6B03D0034FD5D /* PopupAcceptMissionView.swift */; };
+		4595377C22A7B1380034FD5D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595377B22A7B1370034FD5D /* AccountViewController.swift */; };
+		4595377E22A7B5EF0034FD5D /* UIImageGif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595377D22A7B5EF0034FD5D /* UIImageGif.swift */; };
+		4595378222A7B6E90034FD5D /* inscription.gif in Resources */ = {isa = PBXBuildFile; fileRef = 4595378122A7B6E90034FD5D /* inscription.gif */; };
 		4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */; };
 		45971ECC22560EB80060E2BD /* MissionListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45971ECB22560EB80060E2BD /* MissionListHeader.swift */; };
 		459A856822521399000BCD0F /* LargeCategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459A856722521399000BCD0F /* LargeCategoryCell.swift */; };
@@ -98,6 +101,9 @@
 		458EAC1E22034187009FDF75 /* MissionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsListViewController.swift; sourceTree = "<group>"; };
 		4595377722A6B02B0034FD5D /* PopupAcceptMissionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupAcceptMissionView.xib; sourceTree = "<group>"; };
 		4595377922A6B03D0034FD5D /* PopupAcceptMissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupAcceptMissionView.swift; sourceTree = "<group>"; };
+		4595377B22A7B1370034FD5D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		4595377D22A7B5EF0034FD5D /* UIImageGif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UIImageGif.swift; path = Extensions/UIImageGif.swift; sourceTree = "<group>"; };
+		4595378122A7B6E90034FD5D /* inscription.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = inscription.gif; sourceTree = "<group>"; };
 		4596936922A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsMissionsCollectionViewCell.swift; sourceTree = "<group>"; };
 		45971ECB22560EB80060E2BD /* MissionListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionListHeader.swift; sourceTree = "<group>"; };
 		459A856722521399000BCD0F /* LargeCategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeCategoryCell.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		458EAC192203052E009FDF75 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				4595378122A7B6E90034FD5D /* inscription.gif */,
 				45E5527E228EB33C00891A5F /* Popup */,
 				459A8569225388EE000BCD0F /* Extensions */,
 				459A857122539981000BCD0F /* Missions List */,
@@ -185,6 +192,7 @@
 				45C02F2E21F90B1900EA8B56 /* Buttons.swift */,
 				4517E162227A10670080998E /* Sliders.swift */,
 				4580873E229FB34D00695894 /* ProgressView.swift */,
+				4595377D22A7B5EF0034FD5D /* UIImageGif.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -321,6 +329,7 @@
 				456BD6C822709BD4004D17E2 /* MissionsDetailsActionsViewController.swift */,
 				45808740229FB52600695894 /* StatsViewController.swift */,
 				45E1821F22A522920055F48A /* StatsHelpViewController.swift */,
+				4595377B22A7B1370034FD5D /* AccountViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -450,6 +459,7 @@
 				45C02EF821F9042300EA8B56 /* LaunchScreen.storyboard in Resources */,
 				45C02F3521F913D300EA8B56 /* SF-Pro-Text-Bold.otf in Resources */,
 				45C02EF521F9042300EA8B56 /* Assets.xcassets in Resources */,
+				4595378222A7B6E90034FD5D /* inscription.gif in Resources */,
 				45C02F2521F904D300EA8B56 /* SF-Pro-Display-Bold.otf in Resources */,
 				456F39792291916400958937 /* PopupSuccessMissionView.xib in Resources */,
 				45C02F2421F904D300EA8B56 /* SF-Pro-Display-Semibold.otf in Resources */,
@@ -500,6 +510,7 @@
 				458EAC1D22033AF2009FDF75 /* FormErrorMessage.swift in Sources */,
 				45C02F3121F90C5A00EA8B56 /* ObAvatarViewController.swift in Sources */,
 				45E1822022A522920055F48A /* StatsHelpViewController.swift in Sources */,
+				4595377C22A7B1380034FD5D /* AccountViewController.swift in Sources */,
 				459A857022539964000BCD0F /* LargeMissionCell.swift in Sources */,
 				453CF9EB22404A06004F4676 /* MissionCell.swift in Sources */,
 				45E5527D228EB32F00891A5F /* PopupLockedView.swift in Sources */,
@@ -517,6 +528,7 @@
 				456F397D2291C2ED00958937 /* PopupPassMissionView.swift in Sources */,
 				45C02F2721F905C900EA8B56 /* ObIntroPageViewController.swift in Sources */,
 				4596936A22A68E0800DEF8EB /* StatsMissionsCollectionViewCell.swift in Sources */,
+				4595377E22A7B5EF0034FD5D /* UIImageGif.swift in Sources */,
 				45C02EEE21F9042000EA8B56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
